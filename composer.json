@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Baguatte\\": "src/"
+            "Baguette\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Baguatte\\": "tests/"
+            "Baguette\\": "tests/"
         }
     },
     "require": {
