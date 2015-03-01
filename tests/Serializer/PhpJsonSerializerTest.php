@@ -71,6 +71,39 @@ final class PhpJsonSerializerTest extends \Baguette\TestCase
                 'encode_option' => 0,
                 'empty_as_object' => true,
             ],
+            [
+                'expected' => '[false]',
+                'input'    => [false],
+                'encode_option' => 0,
+                'empty_as_object' => true,
+            ],
+            [
+                'expected' => '[true]',
+                'input'    => [true],
+                'encode_option' => 0,
+                'empty_as_object' => true,
+            ],
+        ];
+    }
+
+    /**
+     * @dataProvider dataProviderFor_test_raise_DomainException
+     */
+    public function test_raise_DomainException($expected, $input)
+    {
+        $json = new PhpJsonSerializer;
+
+        $this->setExpectedException('\DomainException', $expected);
+        $json->serialize($input);
+    }
+
+    public function dataProviderFor_test_raise_DomainException()
+    {
+        return [
+            [
+                'expected' => 'JSON_ERROR_UNSUPPORTED_TYPE',
+                'input' => fopen('php://stdout', 'r'),
+            ],
         ];
     }
 }
