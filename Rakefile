@@ -14,7 +14,7 @@ log_coverage = "build/logs/clover.xml"
 task :default => %(all)
 
 desc 'Run `doc`, `test` task'
-task :all => %w(setup doc test)
+task :all => %w(setup phploc test doc)
 
 desc 'Setup application'
 task :setup => %w(vendor:setup composer:setup composer:install)
@@ -48,6 +48,7 @@ namespace :test do
   end
 end
 
+desc 'Run PHPLOC'
 task :phploc do
   sh "#{bin}/phploc ./src/ --log-xml ./build/logs/phploc.xml"
 end
