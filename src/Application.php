@@ -51,6 +51,11 @@ abstract class Application
      */
     abstract public function execute(Teto\Routing\Action $action);
 
+    public function __get($name)
+    {
+        return $this->$name;
+    }
+
     /**
      * @param  \Baguette\Response\ResponseInterface $response
      * @return string
