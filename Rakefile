@@ -9,6 +9,7 @@ phpunit  = "#{bin}/phpunit"
 report = "#{dir}/build/report"
 report_coverage = "#{report}/coverage"
 
+log_dir = "#{dir}/build/logs"
 log_coverage = "build/logs/clover.xml"
 
 task :default => %(all)
@@ -44,13 +45,18 @@ namespace :test do
   desc 'Run unit test and generate code coverage'
   task :coverage do
     FileUtils.mkdir_p(report_coverage) unless FileTest.directory?(report_coverage)
-    sh "#{phpunit} --coverage-clover=#{log_coverage} --coverage-html=#{report_coverage}"
+    sh "#{phpunit} --coverage-clover=#{log_coverage} --coverage-html=#{report_coverage} --coverage-xml=#{log_dir}/coverage"
   end
 end
 
 desc 'Run PHPLOC'
 task :phploc do
   sh "#{bin}/phploc ./src/ --log-xml ./build/logs/phploc.xml"
+end
+
+desc 'Run PHP Mess Detector'
+task :phpmd do
+  sh "#{bin}/phpmd ./src xml #{dir}/build/phpmd.xml --reportfile #{log_dir}/phpmd.xml --suffixes .php"
 end
 
 desc 'Run composer'

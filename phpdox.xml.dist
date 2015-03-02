@@ -29,6 +29,9 @@
                 <source type="pmd">
                     <file name="phpmd.xml" />
                 </source>
+                <source type="phpunit">
+                    <coverage path="coverage" />
+                </source>
             </enrich>
 
             <build engine="html" enabled="true" output="html">
