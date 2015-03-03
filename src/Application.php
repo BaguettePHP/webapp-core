@@ -63,6 +63,8 @@ abstract class Application
     public function renderResponse(Response\ResponseInterface $response)
     {
         if (!headers_sent()) {
+            http_response_code($response->getHttpStatusCode($this));
+
             foreach ($response->getResponseHeaders($this) as $header) {
                 $string  = array_shift($header);
                 $replace = array_shift($header);
