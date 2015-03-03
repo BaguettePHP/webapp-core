@@ -16,13 +16,10 @@ class TwigResponse implements ResponseInterface
 
     /** @var \Twig_Environment */
     private static $twig;
-
     /** @var string */
     public $tpl_name;
-
     /** @var array */
     public $params;
-
     /** @var string|null */
     public $content_type;
 
@@ -62,6 +59,15 @@ class TwigResponse implements ResponseInterface
         ];
 
         return self::$twig->render($this->tpl_name, $params);
+    }
+
+    /**
+     * @param  \Baguette\Application $_ is not used.
+     * @return int
+     */
+    public function getHttpStatusCode(Baguette\Application $_)
+    {
+        return $this->status_code;
     }
 
     /**

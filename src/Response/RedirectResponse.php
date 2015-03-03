@@ -63,6 +63,15 @@ final class RedirectResponse implements ResponseInterface
 
     /**
      * @param  \Baguette\Application $_ is not used.
+     * @return int
+     */
+    public function getHttpStatusCode(Baguette\Application $_)
+    {
+        return $this->status_code;
+    }
+
+    /**
+     * @param  \Baguette\Application $_ is not used.
      * @return null
      */
     public function render(Baguette\Application $_)

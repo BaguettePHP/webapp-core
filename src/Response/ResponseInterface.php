@@ -14,6 +14,9 @@ interface ResponseInterface
     /** @return array[] */
     public function getResponseHeaders(\Baguette\Application $app);
 
+    /** @return int */
+    public function getHttpStatusCode(\Baguette\Application $app);
+
     /** @return string */
     public function render(\Baguette\Application $app);
 }
