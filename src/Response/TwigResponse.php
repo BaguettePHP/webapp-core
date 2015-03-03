@@ -15,7 +15,7 @@ class TwigResponse implements ResponseInterface
     const CONTENT_TYPE_HTML  = 'text/html; charset=utf-8';
 
     /** @var \Twig_Environment */
-    private static $twig;
+    protected static $twig;
     /** @var string */
     public $tpl_name;
     /** @var array */
