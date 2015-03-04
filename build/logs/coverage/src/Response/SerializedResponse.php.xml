@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="SerializedResponse.php">
+    <totals>
+      <lines total="62" comments="28" code="34" executable="8" executed="7" percent="87.50%"/>
+      <methods count="4" tested="3" percent="75.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="SerializedResponse" start="13" executable="8" executed="7" crap="4.03">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\Response"/>
+      <method name="__construct" signature="__construct(array $value, Baguette\Serializer\SerializerInterface $serializer, $status_code = 200)" start="27" end="32" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="getResponseHeaders" signature="getResponseHeaders(Baguette\Application $_)" start="38" end="43" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="getHttpStatusCode" signature="getHttpStatusCode(Baguette\Application $_)" start="49" end="52" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="render" signature="render(Baguette\Application $_)" start="58" end="61" crap="1" executable="1" executed="1" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="29">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="30">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="31">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="32">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="41">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="42">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="60">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

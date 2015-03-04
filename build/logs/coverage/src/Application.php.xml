@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Application.php">
+    <totals>
+      <lines total="86" comments="34" code="52" executable="21" executed="7" percent="33.33%"/>
+      <methods count="3" tested="2" percent="66.67%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Application" start="19" executable="21" executed="7" crap="33.00">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette"/>
+      <method name="__construct" signature="__construct(array $server, array $cookie, array $get, array $post, \DateTimeImmutable $now = null)" start="39" end="46" crap="2" executable="6" executed="6" coverage="100"/>
+      <method name="execute" signature="execute(Teto\Routing\Action $action)" start="52" end="52" crap="1" executable="0" executed="0" coverage="100"/>
+      <method name="__get" signature="__get($name)" start="54" end="57" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="renderResponse" signature="renderResponse(Response\ResponseInterface $response)" start="63" end="84" crap="30" executable="14" executed="0" coverage="0"/>
+    </class>
+    <coverage>
+      <line nr="41">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="42">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="43">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="44">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="45">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="46">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RawResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #0"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #1"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #2"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #3"/>
+        <covered by="Baguette\Response\RedirectResponseTest::test with data set #4"/>
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="56">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Application" namespace="Baguette" name="Application" abstract="true" final="false" start="19" end="86">
+  <file path="/Users/megurine/repo/php/Baguette/src" file="Application.php" realpath="/Users/megurine/repo/php/Baguette/src/Application.php" size="2365" time="2015-03-04T00:15:21+09:00" unixtime="1425395721" sha1="b8d841932ca07e5fee42ba6ccfe01d779df049fa" relative="Application.php"/>
+  <docblock>
+    <description compact="Base class of web application"/>
+    <package value="Baguette"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+    <property value="-read array $server $_SERVER"/>
+    <property value="-read array $cookie $_COOKIE"/>
+    <property value="-read array $get    $_GET"/>
+    <property value="-read array $post   $_POST"/>
+    <property value="-read \DateTimeImmutable $now"/>
+  </docblock>
+  <member name="server" type="{unknown}" visibility="protected" line="22">
+    <docblock>
+      <var description="$_SERVER" type="array"/>
+    </docblock>
+  </member>
+  <member name="cookie" type="{unknown}" visibility="protected" line="24">
+    <docblock>
+      <var description="$_COOKIE" type="array"/>
+    </docblock>
+  </member>
+  <member name="get" type="{unknown}" visibility="protected" line="26">
+    <docblock>
+      <var description="$_GET" type="array"/>
+    </docblock>
+  </member>
+  <member name="post" type="{unknown}" visibility="protected" line="28">
+    <docblock>
+      <var description="$_POST" type="array"/>
+    </docblock>
+  </member>
+  <member name="now" type="{unknown}" visibility="protected" line="30">
+    <docblock>
+      <var type="object">
+        <type full="\DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="39" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="$_SERVER" type="array" variable="$server"/>
+      <param description="$_COOKIE" type="array" variable="$cookie"/>
+      <param description="$_GET" type="array" variable="$get"/>
+      <param description="$_POST" type="array" variable="$post"/>
+      <param type="object" variable="$now">
+        <type full="\DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+      </param>
+    </docblock>
+    <parameter name="server" byreference="false" type="array"/>
+    <parameter name="cookie" byreference="false" type="array"/>
+    <parameter name="get" byreference="false" type="array"/>
+    <parameter name="post" byreference="false" type="array"/>
+    <parameter name="now" byreference="false" type="object" default="null">
+      <type full="DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+    </parameter>
+  </constructor>
+  <method name="execute" start="52" end="52" abstract="true" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$action">
+        <type full="\Teto\Routing\Action" namespace="\Teto\Routing" name="Action"/>
+      </param>
+      <return type="object">
+        <type full="\Baguette\Response\ResponseInterface" namespace="\Baguette\Response" name="ResponseInterface"/>
+      </return>
+    </docblock>
+    <parameter name="action" byreference="false" type="object">
+      <type full="Baguette\Teto\Routing\Action" namespace="Baguette\Teto\Routing" name="Action"/>
+    </parameter>
+  </method>
+  <method name="__get" start="54" end="57" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="renderResponse" start="63" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$response">
+        <type full="\Baguette\Response\ResponseInterface" namespace="\Baguette\Response" name="ResponseInterface"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="response" byreference="false" type="object">
+      <type full="Baguette\Response\ResponseInterface" namespace="Baguette\Response" name="ResponseInterface"/>
+    </parameter>
+  </method>
+</class>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="TwigResponse.php">
+    <totals>
+      <lines total="84" comments="33" code="51" executable="17" executed="16" percent="94.12%"/>
+      <methods count="5" tested="4" percent="80.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="TwigResponse" start="13" executable="17" executed="16" crap="5.01">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\Response"/>
+      <method name="__construct" signature="__construct($tpl_name, array $params = [], $status_code = 200)" start="33" end="38" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="getResponseHeaders" signature="getResponseHeaders(Baguette\Application $app)" start="44" end="49" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="render" signature="render(Baguette\Application $app)" start="55" end="66" crap="1" executable="8" executed="8" coverage="100"/>
+      <method name="getHttpStatusCode" signature="getHttpStatusCode(Baguette\Application $_)" start="72" end="75" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="setTwigEnvironment" signature="setTwigEnvironment(\Twig_Environment $twig)" start="80" end="83" crap="1" executable="2" executed="2" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="35">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="36">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="37">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="38">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="47">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="48">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="57">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="58">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="59">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="60">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="61">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="62">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="63">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="65">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="82">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+      <line nr="83">
+        <covered by="Baguette\Response\TwigResponseTest::test"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\ArrayManager" namespace="Baguette\Session" name="ArrayManager" abstract="false" final="true" start="5" end="60">
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="ArraySession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/ArraySession.php" size="1079" time="2015-03-03T02:23:50+09:00" unixtime="1425317030" sha1="91e3afef71321ece175f9b9e21a07b27f79b3722" relative="Session/ArraySession.php"/>
+  <implements full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface"/>
+  <member name="session" type="{unknown}" visibility="private" line="7"/>
+  <constructor name="__construct" start="9" end="9" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="start" start="14" end="19" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <method name="get" start="26" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="array" variable="$options"/>
+      <return description="$value" type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="array"/>
+  </method>
+  <method name="set" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getAll" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="destroy" start="54" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <interface full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface">
+    <method name="start" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="boolean"/>
+      </docblock>
+    </method>
+    <method name="get" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$name"/>
+        <param type="array" variable="$options"/>
+        <return description="$value" type="mixed"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="array"/>
+    </method>
+    <method name="set" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$name"/>
+        <param type="mixed" variable="$value"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="destroy" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="boolean"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

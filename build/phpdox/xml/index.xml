@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/Users/megurine/repo/php/Baguette/src">
+  <namespace name="Baguette">
+    
+  <class name="Application" src="Application.php" description="Base class of web application" xml="classes/Baguette_Application.xml"/></namespace>
+  <namespace name="Baguette\HTTP">
+    
+  <class name="ContentType" src="HTTP/ContentType.php" description="HTTP ContentType repository" xml="classes/Baguette_HTTP_ContentType.xml"/><class name="StatusCode" src="HTTP/StatusCode.php" description="HTTP StatusCode repository" xml="classes/Baguette_HTTP_StatusCode.xml"/></namespace>
+  <namespace name="Baguette\Response">
+    
+    
+    
+    
+    
+  <class name="RawResponse" src="Response/RawResponse.php" description="Interface of Response classes" xml="classes/Baguette_Response_RawResponse.xml"/><class name="RedirectResponse" src="Response/RedirectResponse.php" description="Redirect Response class" xml="classes/Baguette_Response_RedirectResponse.xml"/><interface name="ResponseInterface" src="Response/ResponseInterface.php" description="Interface of Response classes" xml="interfaces/Baguette_Response_ResponseInterface.xml"/><class name="SerializedResponse" src="Response/SerializedResponse.php" description="Serialized data Response class" xml="classes/Baguette_Response_SerializedResponse.xml"/><class name="TwigResponse" src="Response/TwigResponse.php" description="HTML Template Response" xml="classes/Baguette_Response_TwigResponse.xml"/></namespace>
+  <namespace name="Baguette\Serializer">
+    <class name="PhpJsonSerializer" src="Serializer/PhpJsonSerializer.php" description="JSON Serializer based on PHP JSON module" xml="classes/Baguette_Serializer_PhpJsonSerializer.xml"/>
+    <interface name="SerializerInterface" src="Serializer/SerializerInterface.php" description="Interface of Response serializer classes" xml="interfaces/Baguette_Serializer_SerializerInterface.xml"/>
+  </namespace>
+<namespace name="Baguette\Session"><class name="ArrayManager" src="Session/ArraySession.php" xml="classes/Baguette_Session_ArrayManager.xml"/><class name="PhpSessionManager" src="Session/PhpSession.php" description="Session class based on PHP" xml="classes/Baguette_Session_PhpSessionManager.xml"/><interface name="SessionInterface" src="Session/SessionInterface.php" description="Interface of Session classes" xml="interfaces/Baguette_Session_SessionInterface.xml"/></namespace><namespace name="Baguette\Application"><trait name="AcceptLanguage" src="Application/AcceptLanguage.php" description="Param trait for Application (filter_var wrapper)" xml="traits/Baguette_Application_AcceptLanguage.xml"/><trait name="Param" src="Application/Param.php" description="Param trait for Application (filter_var wrapper)" xml="traits/Baguette_Application_Param.xml"/></namespace></index>

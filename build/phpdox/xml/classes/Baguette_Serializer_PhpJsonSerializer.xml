@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Serializer\PhpJsonSerializer" namespace="Baguette\Serializer" name="PhpJsonSerializer" abstract="false" final="true" start="13" end="89">
+  <file path="/Users/megurine/repo/php/Baguette/src/Serializer" file="PhpJsonSerializer.php" realpath="/Users/megurine/repo/php/Baguette/src/Serializer/PhpJsonSerializer.php" size="2662" time="2015-03-02T03:40:19+09:00" unixtime="1425235219" sha1="9715f782ecea00be32249eb228f9fcd31eab869e" relative="Serializer/PhpJsonSerializer.php"/>
+  <docblock>
+    <description compact="JSON Serializer based on PHP JSON module"/>
+    <package value="Baguette\Serializer"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+    <link value="http://php.net/manual/book.json.php"/>
+  </docblock>
+  <implements full="Baguette\Serializer\SerializerInterface" namespace="Baguette\Serializer" name="SerializerInterface"/>
+  <constant name="CONTENT_TYPE" value="'application/json; charset=utf-8'"/>
+  <member name="JSON_ERROR_CODES" type="array" visibility="private" line="17"/>
+  <member name="json_encode_option" type="{unknown}" visibility="public" line="29">
+    <docblock>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="empty_as_object" type="{unknown}" visibility="public" line="32">
+    <docblock>
+      <var type="boolean"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="38" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="int" variable="$json_encode_option"/>
+      <link value="http://php.net/manual/json.constants.php"/>
+    </docblock>
+    <parameter name="json_encode_option" byreference="false" type="{unknown}" default="null"/>
+  </constructor>
+  <method name="setEmptyAsObject" start="49" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="boolean" variable="$value"/>
+      <return description="$this" type="object">
+        <type full="Baguette\Serializer\JsonResponse" namespace="Baguette\Serializer" name="JsonResponse"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}" default="true"/>
+  </method>
+  <method name="getContentType" start="57" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="serialize" start="69" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="mixed" variable="$value"/>
+      <return type="string"/>
+      <throws type="object">
+        <type full="\DomainException" namespace="" name="DomainException"/>
+      </throws>
+      <link value="http://php.net/manual/function.json-encode.php"/>
+      <link value="http://php.net/manual/function.json-last-error.php"/>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Baguette\Serializer\SerializerInterface" namespace="Baguette\Serializer" name="SerializerInterface">
+    <method name="getContentType" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <return type="string"/>
+      </docblock>
+    </method>
+    <method name="serialize" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="mixed" variable="$value"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

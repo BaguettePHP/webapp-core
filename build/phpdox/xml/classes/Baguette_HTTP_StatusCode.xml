@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\HTTP\StatusCode" namespace="Baguette\HTTP" name="StatusCode" abstract="false" final="true" start="12" end="37">
+  <file path="/Users/megurine/repo/php/Baguette/src/HTTP" file="StatusCode.php" realpath="/Users/megurine/repo/php/Baguette/src/HTTP/StatusCode.php" size="1128" time="2015-03-04T15:58:55+09:00" unixtime="1425452335" sha1="2c8772d96a725a8f42386027a790da35efaf7a16" relative="HTTP/StatusCode.php"/>
+  <docblock>
+    <description compact="HTTP StatusCode repository"/>
+    <package value="Baguette\HTTP"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+  </docblock>
+  <constant name="OK" value="200"/>
+  <constant name="Created" value="201"/>
+  <constant name="Accepted" value="202"/>
+  <constant name="No_Content" value="204"/>
+  <constant name="Reset_Content" value="205"/>
+  <constant name="Moved_Permanently" value="301"/>
+  <constant name="Found" value="302"/>
+  <constant name="See_Other" value="303"/>
+  <constant name="Not_Modified" value="304"/>
+  <constant name="Temporary_Redirect" value="307"/>
+  <constant name="Permanent_Redirect" value="308"/>
+  <constant name="Bad_Request" value="400"/>
+  <constant name="Unauthorized" value="401"/>
+  <constant name="Payment_Required" value="402"/>
+  <constant name="Forbidden" value="403"/>
+  <constant name="Not_Found" value="404"/>
+  <constant name="Method_Not_Allowed" value="405"/>
+  <constant name="Not_Acceptable" value="406"/>
+  <constant name="Im_a_teapot" value="418"/>
+  <constant name="Internal_Server_Error" value="500"/>
+  <constant name="Service_Unavailable" value="503"/>
+  <constructor name="__construct" start="36" end="36" abstract="false" final="false" static="false" visibility="private"/>
+</class>

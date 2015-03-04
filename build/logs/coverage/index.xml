@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <project name="/Users/megurine/repo/php/Baguette">
+    <tests>
+      <test name="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #2" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #3" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #4" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParam with data set #5" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParamAsArray with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParamAsArray with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParamAsArray with data set #2" result="0" status="PASSED"/>
+      <test name="Baguette\Application\ParamTest::test_getParamAsArray with data set #3" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RawResponseTest::test with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RawResponseTest::test with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RedirectResponseTest::test with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RedirectResponseTest::test with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RedirectResponseTest::test with data set #2" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RedirectResponseTest::test with data set #3" result="0" status="PASSED"/>
+      <test name="Baguette\Response\RedirectResponseTest::test with data set #4" result="0" status="PASSED"/>
+      <test name="Baguette\Response\SerializedResponseTest::test" result="0" status="PASSED"/>
+      <test name="Baguette\Response\TwigResponseTest::test" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9" result="0" status="PASSED"/>
+      <test name="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/Users/megurine/repo/php/Baguette">
+      <totals>
+        <lines total="720" comments="282" code="438" executable="140" executed="111" percent="79.29%"/>
+        <methods count="34" tested="24" percent="70.59%"/>
+        <functions count="0" tested="0" percent=""/>
+        <classes count="8" tested="3" percent="37.50%"/>
+        <traits count="2" tested="0" percent="0.00%"/>
+      </totals>
+      <directory name="src">
+        <totals>
+          <lines total="704" comments="276" code="428" executable="139" executed="111" percent="79.86%"/>
+          <methods count="33" tested="24" percent="72.73%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="7" tested="3" percent="42.86%"/>
+          <traits count="2" tested="0" percent="0.00%"/>
+        </totals>
+        <file name="Application.php" href="src/Application.php.xml">
+          <totals>
+            <lines total="86" comments="34" code="52" executable="21" executed="7" percent="33.33%"/>
+            <methods count="3" tested="2" percent="66.67%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <directory name="Application">
+          <totals>
+            <lines total="177" comments="56" code="121" executable="49" executed="39" percent="79.59%"/>
+            <methods count="9" tested="5" percent="55.56%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="1" percent=""/>
+            <traits count="2" tested="0" percent="0.00%"/>
+          </totals>
+          <file name="AcceptLanguage.php" href="src/Application/AcceptLanguage.php.xml">
+            <totals>
+              <lines total="73" comments="21" code="52" executable="20" executed="10" percent="50.00%"/>
+              <methods count="5" tested="1" percent="20.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="0" tested="0" percent=""/>
+              <traits count="1" tested="0" percent="0.00%"/>
+            </totals>
+          </file>
+          <file name="Param.php" href="src/Application/Param.php.xml">
+            <totals>
+              <lines total="104" comments="35" code="69" executable="29" executed="29" percent="100.00%"/>
+              <methods count="4" tested="4" percent="100.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="0" tested="1" percent=""/>
+              <traits count="1" tested="0" percent="0.00%"/>
+            </totals>
+          </file>
+        </directory>
+        <file name="AcceptLanguage.php" href="src/Application/AcceptLanguage.php.xml">
+          <totals>
+            <lines total="73" comments="21" code="52" executable="20" executed="10" percent="50.00%"/>
+            <methods count="5" tested="1" percent="20.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="1" tested="0" percent="0.00%"/>
+          </totals>
+        </file>
+        <file name="Param.php" href="src/Application/Param.php.xml">
+          <totals>
+            <lines total="104" comments="35" code="69" executable="29" executed="29" percent="100.00%"/>
+            <methods count="4" tested="4" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="1" percent=""/>
+            <traits count="1" tested="0" percent="0.00%"/>
+          </totals>
+        </file>
+        <directory name="HTTP">
+          <totals>
+            <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+          <file name="ContentType.php" href="src/HTTP/ContentType.php.xml">
+            <totals>
+              <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+              <methods count="0" tested="0" percent=""/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="1" percent="100.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+        </directory>
+        <file name="ContentType.php" href="src/HTTP/ContentType.php.xml">
+          <totals>
+            <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <directory name="Response">
+          <totals>
+            <lines total="313" comments="138" code="175" executable="51" executed="47" percent="92.16%"/>
+            <methods count="17" tested="13" percent="76.47%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="4" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+          <file name="RawResponse.php" href="src/Response/RawResponse.php.xml">
+            <totals>
+              <lines total="64" comments="28" code="36" executable="10" executed="9" percent="90.00%"/>
+              <methods count="4" tested="3" percent="75.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="0" percent="0.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+          <file name="RedirectResponse.php" href="src/Response/RedirectResponse.php.xml">
+            <totals>
+              <lines total="81" comments="38" code="43" executable="16" executed="15" percent="93.75%"/>
+              <methods count="4" tested="3" percent="75.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="0" percent="0.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+          <file name="ResponseInterface.php" href="src/Response/ResponseInterface.php.xml">
+            <totals>
+              <lines total="22" comments="11" code="11" executable="0" executed="0" percent=""/>
+              <methods count="0" tested="0" percent=""/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="0" tested="0" percent=""/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+          <file name="SerializedResponse.php" href="src/Response/SerializedResponse.php.xml">
+            <totals>
+              <lines total="62" comments="28" code="34" executable="8" executed="7" percent="87.50%"/>
+              <methods count="4" tested="3" percent="75.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="0" percent="0.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+          <file name="TwigResponse.php" href="src/Response/TwigResponse.php.xml">
+            <totals>
+              <lines total="84" comments="33" code="51" executable="17" executed="16" percent="94.12%"/>
+              <methods count="5" tested="4" percent="80.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="0" percent="0.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+        </directory>
+        <file name="RawResponse.php" href="src/Response/RawResponse.php.xml">
+          <totals>
+            <lines total="64" comments="28" code="36" executable="10" executed="9" percent="90.00%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="RedirectResponse.php" href="src/Response/RedirectResponse.php.xml">
+          <totals>
+            <lines total="81" comments="38" code="43" executable="16" executed="15" percent="93.75%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="ResponseInterface.php" href="src/Response/ResponseInterface.php.xml">
+          <totals>
+            <lines total="22" comments="11" code="11" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="SerializedResponse.php" href="src/Response/SerializedResponse.php.xml">
+          <totals>
+            <lines total="62" comments="28" code="34" executable="8" executed="7" percent="87.50%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="TwigResponse.php" href="src/Response/TwigResponse.php.xml">
+          <totals>
+            <lines total="84" comments="33" code="51" executable="17" executed="16" percent="94.12%"/>
+            <methods count="5" tested="4" percent="80.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <directory name="Serializer">
+          <totals>
+            <lines total="111" comments="40" code="71" executable="18" executed="18" percent="100.00%"/>
+            <methods count="4" tested="4" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+          <file name="PhpJsonSerializer.php" href="src/Serializer/PhpJsonSerializer.php.xml">
+            <totals>
+              <lines total="89" comments="27" code="62" executable="18" executed="18" percent="100.00%"/>
+              <methods count="4" tested="4" percent="100.00%"/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="1" tested="1" percent="100.00%"/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+          <file name="SerializerInterface.php" href="src/Serializer/SerializerInterface.php.xml">
+            <totals>
+              <lines total="22" comments="13" code="9" executable="0" executed="0" percent=""/>
+              <methods count="0" tested="0" percent=""/>
+              <functions count="0" tested="0" percent=""/>
+              <classes count="0" tested="0" percent=""/>
+              <traits count="0" tested="0" percent=""/>
+            </totals>
+          </file>
+        </directory>
+        <file name="PhpJsonSerializer.php" href="src/Serializer/PhpJsonSerializer.php.xml">
+          <totals>
+            <lines total="89" comments="27" code="62" executable="18" executed="18" percent="100.00%"/>
+            <methods count="4" tested="4" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="SerializerInterface.php" href="src/Serializer/SerializerInterface.php.xml">
+          <totals>
+            <lines total="22" comments="13" code="9" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="Application.php" href="src/Application.php.xml">
+        <totals>
+          <lines total="86" comments="34" code="52" executable="21" executed="7" percent="33.33%"/>
+          <methods count="3" tested="2" percent="66.67%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <directory name="Application">
+        <totals>
+          <lines total="177" comments="56" code="121" executable="49" executed="39" percent="79.59%"/>
+          <methods count="9" tested="5" percent="55.56%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="1" percent=""/>
+          <traits count="2" tested="0" percent="0.00%"/>
+        </totals>
+        <file name="AcceptLanguage.php" href="src/Application/AcceptLanguage.php.xml">
+          <totals>
+            <lines total="73" comments="21" code="52" executable="20" executed="10" percent="50.00%"/>
+            <methods count="5" tested="1" percent="20.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="1" tested="0" percent="0.00%"/>
+          </totals>
+        </file>
+        <file name="Param.php" href="src/Application/Param.php.xml">
+          <totals>
+            <lines total="104" comments="35" code="69" executable="29" executed="29" percent="100.00%"/>
+            <methods count="4" tested="4" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="1" percent=""/>
+            <traits count="1" tested="0" percent="0.00%"/>
+          </totals>
+        </file>
+      </directory>
+      <file name="AcceptLanguage.php" href="src/Application/AcceptLanguage.php.xml">
+        <totals>
+          <lines total="73" comments="21" code="52" executable="20" executed="10" percent="50.00%"/>
+          <methods count="5" tested="1" percent="20.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="1" tested="0" percent="0.00%"/>
+        </totals>
+      </file>
+      <file name="Param.php" href="src/Application/Param.php.xml">
+        <totals>
+          <lines total="104" comments="35" code="69" executable="29" executed="29" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="1" percent=""/>
+          <traits count="1" tested="0" percent="0.00%"/>
+        </totals>
+      </file>
+      <directory name="HTTP">
+        <totals>
+          <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="ContentType.php" href="src/HTTP/ContentType.php.xml">
+          <totals>
+            <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="ContentType.php" href="src/HTTP/ContentType.php.xml">
+        <totals>
+          <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <directory name="Response">
+        <totals>
+          <lines total="313" comments="138" code="175" executable="51" executed="47" percent="92.16%"/>
+          <methods count="17" tested="13" percent="76.47%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="4" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="RawResponse.php" href="src/Response/RawResponse.php.xml">
+          <totals>
+            <lines total="64" comments="28" code="36" executable="10" executed="9" percent="90.00%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="RedirectResponse.php" href="src/Response/RedirectResponse.php.xml">
+          <totals>
+            <lines total="81" comments="38" code="43" executable="16" executed="15" percent="93.75%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="ResponseInterface.php" href="src/Response/ResponseInterface.php.xml">
+          <totals>
+            <lines total="22" comments="11" code="11" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="SerializedResponse.php" href="src/Response/SerializedResponse.php.xml">
+          <totals>
+            <lines total="62" comments="28" code="34" executable="8" executed="7" percent="87.50%"/>
+            <methods count="4" tested="3" percent="75.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="TwigResponse.php" href="src/Response/TwigResponse.php.xml">
+          <totals>
+            <lines total="84" comments="33" code="51" executable="17" executed="16" percent="94.12%"/>
+            <methods count="5" tested="4" percent="80.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="RawResponse.php" href="src/Response/RawResponse.php.xml">
+        <totals>
+          <lines total="64" comments="28" code="36" executable="10" executed="9" percent="90.00%"/>
+          <methods count="4" tested="3" percent="75.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="RedirectResponse.php" href="src/Response/RedirectResponse.php.xml">
+        <totals>
+          <lines total="81" comments="38" code="43" executable="16" executed="15" percent="93.75%"/>
+          <methods count="4" tested="3" percent="75.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="ResponseInterface.php" href="src/Response/ResponseInterface.php.xml">
+        <totals>
+          <lines total="22" comments="11" code="11" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="SerializedResponse.php" href="src/Response/SerializedResponse.php.xml">
+        <totals>
+          <lines total="62" comments="28" code="34" executable="8" executed="7" percent="87.50%"/>
+          <methods count="4" tested="3" percent="75.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="TwigResponse.php" href="src/Response/TwigResponse.php.xml">
+        <totals>
+          <lines total="84" comments="33" code="51" executable="17" executed="16" percent="94.12%"/>
+          <methods count="5" tested="4" percent="80.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <directory name="Serializer">
+        <totals>
+          <lines total="111" comments="40" code="71" executable="18" executed="18" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="PhpJsonSerializer.php" href="src/Serializer/PhpJsonSerializer.php.xml">
+          <totals>
+            <lines total="89" comments="27" code="62" executable="18" executed="18" percent="100.00%"/>
+            <methods count="4" tested="4" percent="100.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="1" percent="100.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+        <file name="SerializerInterface.php" href="src/Serializer/SerializerInterface.php.xml">
+          <totals>
+            <lines total="22" comments="13" code="9" executable="0" executed="0" percent=""/>
+            <methods count="0" tested="0" percent=""/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="0" tested="0" percent=""/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="PhpJsonSerializer.php" href="src/Serializer/PhpJsonSerializer.php.xml">
+        <totals>
+          <lines total="89" comments="27" code="62" executable="18" executed="18" percent="100.00%"/>
+          <methods count="4" tested="4" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="SerializerInterface.php" href="src/Serializer/SerializerInterface.php.xml">
+        <totals>
+          <lines total="22" comments="13" code="9" executable="0" executed="0" percent=""/>
+          <methods count="0" tested="0" percent=""/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="0" tested="0" percent=""/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <directory name="tests">
+        <totals>
+          <lines total="16" comments="6" code="10" executable="1" executed="0" percent="0.00%"/>
+          <methods count="1" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+        <file name="DummyApplication.php" href="tests/DummyApplication.php.xml">
+          <totals>
+            <lines total="16" comments="6" code="10" executable="1" executed="0" percent="0.00%"/>
+            <methods count="1" tested="0" percent="0.00%"/>
+            <functions count="0" tested="0" percent=""/>
+            <classes count="1" tested="0" percent="0.00%"/>
+            <traits count="0" tested="0" percent=""/>
+          </totals>
+        </file>
+      </directory>
+      <file name="DummyApplication.php" href="tests/DummyApplication.php.xml">
+        <totals>
+          <lines total="16" comments="6" code="10" executable="1" executed="0" percent="0.00%"/>
+          <methods count="1" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>

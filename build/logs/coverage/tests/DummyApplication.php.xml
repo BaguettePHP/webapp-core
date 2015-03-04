@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="DummyApplication.php">
+    <totals>
+      <lines total="16" comments="6" code="10" executable="1" executed="0" percent="0.00%"/>
+      <methods count="1" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="DummyApplication" start="11" executable="1" executed="0" crap="2">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette"/>
+      <method name="execute" signature="execute(Teto\Routing\Action $action)" start="13" end="15" crap="2" executable="1" executed="0" coverage="0"/>
+    </class>
+  </file>
+</phpunit>

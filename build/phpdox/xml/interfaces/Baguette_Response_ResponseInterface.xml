@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Baguette\Response\ResponseInterface" namespace="Baguette\Response" name="ResponseInterface" abstract="false" final="false" start="12" end="22">
+  <file path="/Users/megurine/repo/php/Baguette/src/Response" file="ResponseInterface.php" realpath="/Users/megurine/repo/php/Baguette/src/Response/ResponseInterface.php" size="555" time="2015-03-03T23:31:40+09:00" unixtime="1425393100" sha1="190ba9f51e706db07327c76d69758290a878bffd" relative="Response/ResponseInterface.php"/>
+  <docblock>
+    <description compact="Interface of Response classes"/>
+    <package value="Baguette\Response"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+  </docblock>
+  <method name="getResponseHeaders" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <return type="array" of="object">
+        <type full="Baguette\Response\array" namespace="Baguette\Response" name="array"/>
+      </return>
+    </docblock>
+    <parameter name="app" byreference="false" type="object">
+      <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <method name="getHttpStatusCode" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <return type="int"/>
+    </docblock>
+    <parameter name="app" byreference="false" type="object">
+      <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <method name="render" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <return type="string"/>
+    </docblock>
+    <parameter name="app" byreference="false" type="object">
+      <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <implementor full="Baguette\Response\RawResponse" namespace="Baguette\Response" name="RawResponse"/>
+  <implementor full="Baguette\Response\RedirectResponse" namespace="Baguette\Response" name="RedirectResponse"/>
+  <implementor full="Baguette\Response\SerializedResponse" namespace="Baguette\Response" name="SerializedResponse"/>
+  <implementor full="Baguette\Response\TwigResponse" namespace="Baguette\Response" name="TwigResponse"/>
+</interface>

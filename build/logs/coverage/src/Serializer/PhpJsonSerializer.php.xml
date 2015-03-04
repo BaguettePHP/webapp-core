@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="PhpJsonSerializer.php">
+    <totals>
+      <lines total="89" comments="27" code="62" executable="18" executed="18" percent="100.00%"/>
+      <methods count="4" tested="4" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="PhpJsonSerializer" start="13" executable="18" executed="18" crap="10">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\Serializer"/>
+      <method name="__construct" signature="__construct($json_encode_option = null)" start="38" end="43" crap="2" executable="4" executed="4" coverage="100"/>
+      <method name="setEmptyAsObject" signature="setEmptyAsObject($value = true)" start="49" end="54" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="getContentType" signature="getContentType()" start="57" end="60" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="serialize" signature="serialize($value)" start="69" end="88" crap="6" executable="11" executed="11" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="40">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="41">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="42">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="43">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="51">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+      </line>
+      <line nr="53">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+      </line>
+      <line nr="59">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+      </line>
+      <line nr="71">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="72">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+      </line>
+      <line nr="73">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+      </line>
+      <line nr="74">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="77">
+        <covered by="Baguette\Response\SerializedResponseTest::test"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #0"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #1"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #2"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #3"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #4"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #5"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #6"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #7"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #8"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test with data set #9"/>
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="79">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="81">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="83">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="84">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="85">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+      <line nr="87">
+        <covered by="Baguette\Serializer\PhpJsonSerializerTest::test_raise_DomainException with data set #0"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Response\SerializedResponse" namespace="Baguette\Response" name="SerializedResponse" abstract="false" final="true" start="13" end="62">
+  <file path="/Users/megurine/repo/php/Baguette/src/Response" file="SerializedResponse.php" realpath="/Users/megurine/repo/php/Baguette/src/Response/SerializedResponse.php" size="1570" time="2015-03-03T23:39:01+09:00" unixtime="1425393541" sha1="ae1e733f3dc9925ba6451dd8acf92bddcd572cc5" relative="Response/SerializedResponse.php"/>
+  <docblock>
+    <description compact="Serialized data Response class"/>
+    <package value="Baguette\Response"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+  </docblock>
+  <implements full="Baguette\Response\ResponseInterface" namespace="Baguette\Response" name="ResponseInterface"/>
+  <member name="value" type="{unknown}" visibility="public" line="16">
+    <docblock>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="serializer" type="{unknown}" visibility="public" line="18">
+    <docblock>
+      <var type="object">
+        <type full="\Baguette\Serializer\SerializerInterface" namespace="\Baguette\Serializer" name="SerializerInterface"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="status_code" type="{unknown}" visibility="private" line="20">
+    <docblock>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="array" variable="$value"/>
+      <param type="object" variable="$serializer">
+        <type full="\Baguette\Serializer\SerializerInterface" namespace="\Baguette\Serializer" name="SerializerInterface"/>
+      </param>
+      <param type="int" variable="$status_code"/>
+    </docblock>
+    <parameter name="value" byreference="false" type="array"/>
+    <parameter name="serializer" byreference="false" type="object">
+      <type full="Baguette\Response\Baguette\Serializer\SerializerInterface" namespace="Baguette\Response\Baguette\Serializer" name="SerializerInterface"/>
+    </parameter>
+    <parameter name="status_code" byreference="false" type="integer" default="200"/>
+  </constructor>
+  <method name="getResponseHeaders" start="38" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="is not used." type="object" variable="$_">
+        <type full="\Baguette\Application" namespace="\Baguette" name="Application"/>
+      </param>
+      <return type="array" of="object">
+        <type full="Baguette\Response\array" namespace="Baguette\Response" name="array"/>
+      </return>
+    </docblock>
+    <parameter name="_" byreference="false" type="object">
+      <type full="Baguette\Response\Baguette\Application" namespace="Baguette\Response\Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <method name="getHttpStatusCode" start="49" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="is not used." type="object" variable="$_">
+        <type full="\Baguette\Application" namespace="\Baguette" name="Application"/>
+      </param>
+      <return type="int"/>
+    </docblock>
+    <parameter name="_" byreference="false" type="object">
+      <type full="Baguette\Response\Baguette\Application" namespace="Baguette\Response\Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <method name="render" start="58" end="61" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="is not used." type="object" variable="$_">
+        <type full="\Baguette\Application" namespace="\Baguette" name="Application"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="_" byreference="false" type="object">
+      <type full="Baguette\Response\Baguette\Application" namespace="Baguette\Response\Baguette" name="Application"/>
+    </parameter>
+  </method>
+  <interface full="Baguette\Response\ResponseInterface" namespace="Baguette\Response" name="ResponseInterface">
+    <method name="getResponseHeaders" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <return type="array" of="object">
+          <type full="Baguette\Response\array" namespace="Baguette\Response" name="array"/>
+        </return>
+      </docblock>
+      <parameter name="app" byreference="false" type="object">
+        <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+      </parameter>
+    </method>
+    <method name="getHttpStatusCode" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <return type="int"/>
+      </docblock>
+      <parameter name="app" byreference="false" type="object">
+        <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+      </parameter>
+    </method>
+    <method name="render" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <return type="string"/>
+      </docblock>
+      <parameter name="app" byreference="false" type="object">
+        <type full="Baguette\Application" namespace="Baguette" name="Application"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

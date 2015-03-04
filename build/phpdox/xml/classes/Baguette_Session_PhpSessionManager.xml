@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\PhpSessionManager" namespace="Baguette\Session" name="PhpSessionManager" abstract="false" final="true" start="13" end="64">
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="PhpSession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/PhpSession.php" size="1295" time="2015-03-03T02:24:54+09:00" unixtime="1425317094" sha1="43460a8d4b68c94dd5658b29e6fc6f57d6414975" relative="Session/PhpSession.php"/>
+  <docblock>
+    <description compact="Session class based on PHP"/>
+    <package value="Baguette\Response"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+    <link value="http://php.net/manual/book.session.php"/>
+  </docblock>
+  <implements full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface"/>
+  <constructor name="__construct" start="15" end="15" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="start" start="20" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <method name="get" start="30" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="array" variable="$options"/>
+      <return description="$value" type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="array"/>
+  </method>
+  <method name="getAll" start="41" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="set" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="destroy" start="58" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <interface full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface">
+    <method name="start" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="boolean"/>
+      </docblock>
+    </method>
+    <method name="get" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$name"/>
+        <param type="array" variable="$options"/>
+        <return description="$value" type="mixed"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="array"/>
+    </method>
+    <method name="set" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$name"/>
+        <param type="mixed" variable="$value"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="destroy" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="boolean"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface" abstract="false" final="false" start="12" end="36">
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="SessionInterface.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/SessionInterface.php" size="692" time="2015-03-03T02:19:44+09:00" unixtime="1425316784" sha1="61ece7e5a2de0ecbd3bbbc74beaea3a6d48d4e89" relative="Session/SessionInterface.php"/>
+  <docblock>
+    <description compact="Interface of Session classes"/>
+    <package value="Baguette\Response"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+  </docblock>
+  <method name="start" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <method name="get" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="array" variable="$options"/>
+      <return description="$value" type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="array"/>
+  </method>
+  <method name="set" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="destroy" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="boolean"/>
+    </docblock>
+  </method>
+  <implementor full="Baguette\Session\ArrayManager" namespace="Baguette\Session" name="ArrayManager"/>
+  <implementor full="Baguette\Session\PhpSessionManager" namespace="Baguette\Session" name="PhpSessionManager"/>
+</interface>

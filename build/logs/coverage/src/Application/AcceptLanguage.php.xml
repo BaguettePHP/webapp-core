@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="AcceptLanguage.php">
+    <totals>
+      <lines total="73" comments="21" code="52" executable="20" executed="10" percent="50.00%"/>
+      <methods count="5" tested="1" percent="20.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="0" tested="0" percent=""/>
+      <traits count="1" tested="0" percent="0.00%"/>
+    </totals>
+    <trait name="AcceptLanguage" start="15" executable="20" executed="10" crap="26.12">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\Application"/>
+      <method name="getLanguage" signature="getLanguage(array $languages = [])" start="29" end="54" crap="11.84" executable="11" executed="5" coverage="45.454545454545"/>
+      <method name="anonymous function" signature="anonymous function ($lang) use ($languages)" start="46" end="49" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="getLanguageByStrategy" signature="getLanguageByStrategy()" start="56" end="59" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="setAvailableLanguages" signature="setAvailableLanguages(array $lang)" start="61" end="64" crap="2" executable="1" executed="0" coverage="0"/>
+      <method name="setLanguageDetectStrategy" signature="setLanguageDetectStrategy(callable $strategy)" start="69" end="72" crap="2" executable="2" executed="0" coverage="0"/>
+    </trait>
+    <coverage>
+      <line nr="33">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="40">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="41">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="42">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="43">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="47">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="48">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="49">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="50">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+      <line nr="53">
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\AcceptLanguageTest::test_getParam with data set #2"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

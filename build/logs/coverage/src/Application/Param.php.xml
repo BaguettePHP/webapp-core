@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Param.php">
+    <totals>
+      <lines total="104" comments="35" code="69" executable="29" executed="29" percent="100.00%"/>
+      <methods count="4" tested="4" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="0" tested="1" percent=""/>
+      <traits count="1" tested="0" percent="0.00%"/>
+    </totals>
+    <trait name="Param" start="14" executable="29" executed="29" crap="17">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\Application"/>
+      <method name="getParam" signature="getParam($name, $filter = FILTER_DEFAULT, array $option = [])" start="24" end="33" crap="3" executable="4" executed="4" coverage="100"/>
+      <method name="getParamAsArray" signature="getParamAsArray($name, $filter = FILTER_DEFAULT, array $option = [])" start="41" end="50" crap="3" executable="4" executed="4" coverage="100"/>
+      <method name="getParamFilter" signature="getParamFilter($name, $filter, $filter_option = [], $get_array = null)" start="59" end="84" crap="7" executable="14" executed="14" coverage="100"/>
+      <method name="filterParam" signature="filterParam($value, $filter = FILTER_DEFAULT, $filter_option = null)" start="92" end="103" crap="4" executable="7" executed="7" coverage="100"/>
+    </trait>
+    <coverage>
+      <line nr="26">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+      </line>
+      <line nr="28">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+      </line>
+      <line nr="29">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+      </line>
+      <line nr="32">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+      </line>
+      <line nr="43">
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="45">
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="46">
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+      </line>
+      <line nr="49">
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="63">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="65">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="66">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="67">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="69">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="71">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="72">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="74">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="75">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="77">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="79">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="80">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="81">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="83">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #4"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #5"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="94">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="95">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="97">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="98">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="99">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="100">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+      <line nr="102">
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #1"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #2"/>
+        <covered by="Baguette\Application\ParamTest::test_getParam with data set #3"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #0"/>
+        <covered by="Baguette\Application\ParamTest::test_getParamAsArray with data set #3"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\HTTP\ContentType" namespace="Baguette\HTTP" name="ContentType" abstract="false" final="true" start="12" end="17">
+  <file path="/Users/megurine/repo/php/Baguette/src/HTTP" file="ContentType.php" realpath="/Users/megurine/repo/php/Baguette/src/HTTP/ContentType.php" size="375" time="2015-03-04T15:37:01+09:00" unixtime="1425451021" sha1="e792f806b7686171395e0f632bce7b1bc9d12009" relative="HTTP/ContentType.php"/>
+  <docblock>
+    <description compact="HTTP ContentType repository"/>
+    <package value="Baguette\HTTP"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+  </docblock>
+  <constant name="Application_OctetStream" value="'application/octet-stream'"/>
+  <constructor name="__construct" start="16" end="16" abstract="false" final="false" static="false" visibility="private"/>
+</class>

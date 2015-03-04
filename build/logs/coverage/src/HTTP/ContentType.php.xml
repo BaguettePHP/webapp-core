@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="ContentType.php">
+    <totals>
+      <lines total="17" comments="8" code="9" executable="0" executed="0" percent=""/>
+      <methods count="0" tested="0" percent=""/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="ContentType" start="12" executable="0" executed="0" crap="1">
+      <package full="Baguette" name="Baguette" sub="" category=""/>
+      <namespace name="Baguette\HTTP"/>
+      <method name="__construct" signature="__construct()" start="16" end="16" crap="1" executable="0" executed="0" coverage="100"/>
+    </class>
+  </file>
+</phpunit>
