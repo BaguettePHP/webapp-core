@@ -15,25 +15,26 @@ class TwigResponse implements ResponseInterface
     const CONTENT_TYPE_HTML  = 'text/html; charset=utf-8';
 
     /** @var \Twig_Environment */
-    private static $twig;
-
+    protected static $twig;
     /** @var string */
     public $tpl_name;
-
     /** @var array */
     public $params;
-
     /** @var string|null */
     public $content_type;
+    /** @var int */
+    public $status_code;
 
     /**
      * @param string $tpl_name
      * @param array  $params
+     * @param int    $status_code
      */
-    public function __construct($tpl_name, array $params = [])
+    public function __construct($tpl_name, array $params = [], $status_code = 200)
     {
         $this->tpl_name = $tpl_name;
         $this->params   = $params;
+        $this->status_code = $status_code;
     }
 
     /**
@@ -62,6 +63,15 @@ class TwigResponse implements ResponseInterface
         ];
 
         return self::$twig->render($this->tpl_name, $params);
+    }
+
+    /**
+     * @param  \Baguette\Application $_ is not used.
+     * @return int
+     */
+    public function getHttpStatusCode(Baguette\Application $_)
+    {
+        return $this->status_code;
     }
 
     /**

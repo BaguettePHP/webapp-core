@@ -16,15 +16,19 @@ final class SerializedResponse implements ResponseInterface
     public $value;
     /** @var \Baguette\Serializer\SerializerInterface */
     public $serializer;
+    /** @var int */
+    private $status_code;
 
     /**
      * @param array $value
      * @param \Baguette\Serializer\SerializerInterface $serializer
+     * @param int   $status_code
      */
-    public function __construct(array $value, Baguette\Serializer\SerializerInterface $serializer)
+    public function __construct(array $value, Baguette\Serializer\SerializerInterface $serializer, $status_code = 200)
     {
         $this->value = $value;
         $this->serializer = $serializer;
+        $this->status_code = $status_code;
     }
 
     /**
@@ -36,6 +40,15 @@ final class SerializedResponse implements ResponseInterface
         return [
             ['Content-Type: '. $this->serializer->getContentType()]
         ];
+    }
+
+    /**
+     * @param  \Baguette\Application $_ is not used.
+     * @return int
+     */
+    public function getHttpStatusCode(Baguette\Application $_)
+    {
+        return $this->status_code;
     }
 
     /**

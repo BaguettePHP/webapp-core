@@ -2,7 +2,7 @@
 namespace Baguette\HTTP;
 
 /**
- * Interface of Response classes
+ * HTTP ContentType repository
  *
  * @package   Baguette\HTTP
  * @author    USAMI Kenta <tadsan@zonu.me>
@@ -12,4 +12,6 @@ namespace Baguette\HTTP;
 final class ContentType
 {
     const Application_OctetStream = 'application/octet-stream';
+
+    private function __construct() {}
 }
