@@ -22,6 +22,7 @@
         ,"phpmd/phpmd":     "@stable"
         ,"satooshi/php-coveralls": "dev-master"
         ,"twig/twig":       "~1.18.0"
+        ,"zonuexe/http-accept-language": "~0.4.1"
     },
     "autoload": {
         "psr-4": {
@@ -35,5 +36,6 @@
     },
     "suggest": {
         "twig/twig": "template engine"
+       ,"zonuexe/http-accept-language": "HTTP Accept-Language header parser"
     }
 }
