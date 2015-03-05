@@ -13,7 +13,6 @@
         "webapp"
     ],
     "require": {
-        "zonuexe/simple-routing": "~0.1.2"
     },
     "require-dev": {
          "phpunit/phpunit": "~4.3.5"
@@ -22,6 +21,7 @@
         ,"phpmd/phpmd":     "@stable"
         ,"satooshi/php-coveralls": "dev-master"
         ,"twig/twig":       "~1.18.0"
+        ,"zonuexe/simple-routing": "~0.2.0"
         ,"zonuexe/http-accept-language": "~0.4.1"
     },
     "autoload": {
@@ -36,6 +36,7 @@
     },
     "suggest": {
         "twig/twig": "template engine"
+       ,"zonuexe/simple-routing": "simple router for web app"
        ,"zonuexe/http-accept-language": "HTTP Accept-Language header parser"
     }
 }
