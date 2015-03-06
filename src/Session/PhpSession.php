@@ -4,13 +4,13 @@ namespace Baguette\Session;
 /**
  * Session class based on PHP
  *
- * @package   Baguette\Response
+ * @package   Baguette\Session
  * @author    USAMI Kenta <tadsan@zonu.me>
  * @copyright 2015 USAMI Kenta
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  * @link      http://php.net/manual/book.session.php
  */
-final class PhpSessionManager implements SessionInterface
+final class PhpSession implements SessionInterface
 {
     public function __construct() {}
 
