@@ -3,6 +3,7 @@
   <dir name="/Users/megurine/repo/php/Baguette/src">
     <dir name="Application">
       <file name="AcceptLanguage.php" size="2168" time="2015-03-05T03:37:13+09:00" unixtime="1425494233" sha1="3cd7addcf297f7a6d2cdae5f7b0ab8783d43c2cf" xml="tokens/Application/AcceptLanguage.php.xml"/>
+      <file name="Logging.php" size="983" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="798c39da7dcf71a68263ba24366362e4583b5aa9" xml="tokens/Application/Logging.php.xml"/>
       <file name="Param.php" size="2720" time="2015-03-05T03:37:13+09:00" unixtime="1425494233" sha1="062afef13c11c6307a52bea1116ff1154f5ab44b" xml="tokens/Application/Param.php.xml"/>
     </dir>
     <file name="Application.php" size="2365" time="2015-03-05T03:37:13+09:00" unixtime="1425494233" sha1="b8d841932ca07e5fee42ba6ccfe01d779df049fa" xml="tokens/Application.php.xml"/>
@@ -22,9 +23,9 @@
       <file name="SerializerInterface.php" size="474" time="2015-03-01T21:45:56+09:00" unixtime="1425213956" sha1="5754df5bb68de3814022fc42df3cf475bbff3512" xml="tokens/Serializer/SerializerInterface.php.xml"/>
     </dir>
     <dir name="Session">
-      <file name="ArraySession.php" size="1079" time="2015-03-03T02:23:50+09:00" unixtime="1425317030" sha1="91e3afef71321ece175f9b9e21a07b27f79b3722" xml="tokens/Session/ArraySession.php.xml"/>
-      <file name="PhpSession.php" size="1295" time="2015-03-03T02:24:54+09:00" unixtime="1425317094" sha1="43460a8d4b68c94dd5658b29e6fc6f57d6414975" xml="tokens/Session/PhpSession.php.xml"/>
-      <file name="SessionInterface.php" size="692" time="2015-03-03T02:19:44+09:00" unixtime="1425316784" sha1="61ece7e5a2de0ecbd3bbbc74beaea3a6d48d4e89" xml="tokens/Session/SessionInterface.php.xml"/>
+      <file name="ArraySession.php" size="1341" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="2a88a63b1385d879b312644fe69045531ea2447a" xml="tokens/Session/ArraySession.php.xml"/>
+      <file name="PhpSession.php" size="1281" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="e329a26ac4a44720e01a841d0f9aecf6a2f29267" xml="tokens/Session/PhpSession.php.xml"/>
+      <file name="SessionInterface.php" size="691" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="7dc212b776704f71ffa9ec6040e5fcc0af27eda4" xml="tokens/Session/SessionInterface.php.xml"/>
     </dir>
   </dir>
 </source>

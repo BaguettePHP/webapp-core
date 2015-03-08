@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface" abstract="false" final="false" start="12" end="36">
-  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="SessionInterface.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/SessionInterface.php" size="692" time="2015-03-03T02:19:44+09:00" unixtime="1425316784" sha1="61ece7e5a2de0ecbd3bbbc74beaea3a6d48d4e89" relative="Session/SessionInterface.php"/>
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="SessionInterface.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/SessionInterface.php" size="691" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="7dc212b776704f71ffa9ec6040e5fcc0af27eda4" relative="Session/SessionInterface.php"/>
   <docblock>
     <description compact="Interface of Session classes"/>
-    <package value="Baguette\Response"/>
+    <package value="Baguette\Session"/>
     <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
     <copyright value="2015 USAMI Kenta"/>
     <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
@@ -39,6 +39,6 @@
       <return type="boolean"/>
     </docblock>
   </method>
-  <implementor full="Baguette\Session\ArrayManager" namespace="Baguette\Session" name="ArrayManager"/>
-  <implementor full="Baguette\Session\PhpSessionManager" namespace="Baguette\Session" name="PhpSessionManager"/>
+  <implementor full="Baguette\Session\ArraySession" namespace="Baguette\Session" name="ArraySession"/>
+  <implementor full="Baguette\Session\PhpSession" namespace="Baguette\Session" name="PhpSession"/>
 </interface>

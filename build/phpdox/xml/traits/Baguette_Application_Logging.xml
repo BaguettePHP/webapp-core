@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trait xmlns="http://xml.phpdox.net/src" full="Baguette\Application\Logging" namespace="Baguette\Application" name="Logging" abstract="false" final="false" start="14" end="41">
+  <file path="/Users/megurine/repo/php/Baguette/src/Application" file="Logging.php" realpath="/Users/megurine/repo/php/Baguette/src/Application/Logging.php" size="983" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="798c39da7dcf71a68263ba24366362e4583b5aa9" relative="Application/Logging.php"/>
+  <docblock>
+    <description compact="Logging trait for Application"/>
+    <package value="Baguette\Application"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+    <link value="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md"/>
+  </docblock>
+  <member name="logging_logger" type="{unknown}" visibility="private" line="19">
+    <docblock>
+      <var type="object">
+        <type full="\Psr\Log\LoggerInterface" namespace="\Psr\Log" name="LoggerInterface"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="log" start="29" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Logs with an arbitrary level."/>
+      <param type="mixed" variable="$level"/>
+      <param type="string" variable="$message"/>
+      <param type="array" variable="$context"/>
+      <return type="object">
+        <type full="Baguette\Application\null" namespace="Baguette\Application" name="null"/>
+      </return>
+    </docblock>
+    <parameter name="level" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="context" byreference="false" type="array"/>
+  </method>
+  <method name="setLogger" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$logger">
+        <type full="\Psr\Log\LoggerInterface" namespace="\Psr\Log" name="LoggerInterface"/>
+      </param>
+    </docblock>
+    <parameter name="logger" byreference="false" type="object">
+      <type full="Baguette\Application\Log\LoggerInterface" namespace="Baguette\Application\Log" name="LoggerInterface"/>
+    </parameter>
+  </method>
+</trait>

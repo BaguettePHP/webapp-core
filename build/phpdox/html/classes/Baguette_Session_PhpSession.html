@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - Baguette\Session\ArrayManager</title>
+    <title>phpDox - Baguette\Session\PhpSession</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -44,7 +44,7 @@
           <li class="separator">
             <a href="../classes.html#Baguette_Session">Baguette\Session</a>
           </li>
-          <li class="separator">ArrayManager</li>
+          <li class="separator">PhpSession</li>
         </ul>
       </div>
       <nav class="box">
@@ -59,34 +59,35 @@
             <a href="#hierarchy">Hierarchy</a>
           </li>
           <li>
-            <a href="#members">Members</a>
-          </li>
-          <li>
             <a href="#methods">Methods</a>
           </li>
           <li>
             <a href="#history">History</a>
           </li>
           <li>
-            <a href="../source/Session/ArraySession.php.xhtml#line5">Source</a>
+            <a href="../source/Session/PhpSession.php.xhtml#line13">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1 id="introduction"><small>Baguette\Session\</small>ArrayManager</h1>
-        <h4/>
+        <h1 id="introduction"><small>Baguette\Session\</small>PhpSession</h1>
+        <h4>Session class based on PHP</h4>
         <p/>
+        <ul>
+          <li>Author: USAMI Kenta &lt;tadsan@zonu.me&gt;</li>
+          <li>Copyright: 2015 USAMI Kenta</li>
+          <li>License: http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0</li>
+        </ul>
         <h2 id="synopsis">Synopsis</h2>
-        <div class="synopsis">class ArrayManager
+        <div class="synopsis">class PhpSession
                 implements
                 <a title="Baguette\Session\SessionInterface" href="../interfaces/Baguette_Session_SessionInterface.html">SessionInterface</a>
-            {<br/><ul class="none"><li>// members</li><li>private <a href="#members">$session</a>;
-                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/__construct.html">__construct</a>()
-                    </li><li>public boolean <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/start.html">start</a>()
-                    </li><li>public mixed <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/get.html">get</a>()
-                    </li><li>public void <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/set.html">set</a>()
-                    </li><li>public array <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/getAll.html">getAll</a>()
-                    </li><li>public boolean <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/destroy.html">destroy</a>()
+            {<br/><ul class="none"><li>// methods</li><li>public void <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/__construct.html">__construct</a>()
+                    </li><li>public boolean <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/start.html">start</a>()
+                    </li><li>public mixed <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/get.html">get</a>()
+                    </li><li>public array <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/getAll.html">getAll</a>()
+                    </li><li>public void <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/set.html">set</a>()
+                    </li><li>public boolean <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/destroy.html">destroy</a>()
                     </li></ul>
 
             }<br/></div>
@@ -99,36 +100,27 @@
             </li>
           </ul>
         </div>
-        <h2 id="members">Members</h2>
-        <div class="styled members">
-          <h4>private</h4>
-          <ul class="members">
-            <li id="session">
-              <strong>$session</strong>
-            </li>
-          </ul>
-        </div>
         <h2 id="methods">Methods</h2>
         <div class="styled">
           <h4>public</h4>
           <ul>
             <li id="__construct">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/__construct.html">__construct()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/__construct.html">__construct()</a>
             </li>
             <li id="destroy">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/destroy.html">destroy()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/destroy.html">destroy()</a>
             </li>
             <li id="get">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/get.html">get()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/get.html">get()</a>
             </li>
             <li id="getAll">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/getAll.html">getAll()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/getAll.html">getAll()</a>
             </li>
             <li id="set">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/set.html">set()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/set.html">set()</a>
             </li>
             <li id="start">
-              <a title="Baguette\Session\ArrayManager" href="../classes/Baguette_Session_ArrayManager/start.html">start()</a>
+              <a title="Baguette\Session\PhpSession" href="../classes/Baguette_Session_PhpSession/start.html">start()</a>
             </li>
           </ul>
         </div>
@@ -148,7 +140,7 @@
       </section>
     </div>
     <footer>
-      <span>Generated using phpDox cd282b4-dirty - Copyright (C) 2010 - 2015 by Arne Blankerts</span>
+      <span>Generated using phpDox 13d523e-dirty - Copyright (C) 2010 - 2015 by Arne Blankerts</span>
     </footer>
   </body>
 </html>

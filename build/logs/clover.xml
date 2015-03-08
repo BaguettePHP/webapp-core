@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1425494238">
-  <project timestamp="1425494238">
+<coverage generated="1425832862">
+  <project timestamp="1425832862">
     <package name="Baguette">
       <file name="/Users/megurine/repo/php/Baguette/src/Application.php">
         <class name="Application" namespace="Baguette" fullPackage="Baguette" package="Baguette">

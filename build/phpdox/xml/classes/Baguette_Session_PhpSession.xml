@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\PhpSessionManager" namespace="Baguette\Session" name="PhpSessionManager" abstract="false" final="true" start="13" end="64">
-  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="PhpSession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/PhpSession.php" size="1295" time="2015-03-03T02:24:54+09:00" unixtime="1425317094" sha1="43460a8d4b68c94dd5658b29e6fc6f57d6414975" relative="Session/PhpSession.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\PhpSession" namespace="Baguette\Session" name="PhpSession" abstract="false" final="false" start="13" end="64">
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="PhpSession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/PhpSession.php" size="1281" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="e329a26ac4a44720e01a841d0f9aecf6a2f29267" relative="Session/PhpSession.php"/>
   <docblock>
     <description compact="Session class based on PHP"/>
-    <package value="Baguette\Response"/>
+    <package value="Baguette\Session"/>
     <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
     <copyright value="2015 USAMI Kenta"/>
     <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>

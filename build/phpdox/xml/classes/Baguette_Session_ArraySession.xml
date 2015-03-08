@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\ArrayManager" namespace="Baguette\Session" name="ArrayManager" abstract="false" final="true" start="5" end="60">
-  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="ArraySession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/ArraySession.php" size="1079" time="2015-03-03T02:23:50+09:00" unixtime="1425317030" sha1="91e3afef71321ece175f9b9e21a07b27f79b3722" relative="Session/ArraySession.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Baguette\Session\ArraySession" namespace="Baguette\Session" name="ArraySession" abstract="false" final="false" start="13" end="68">
+  <file path="/Users/megurine/repo/php/Baguette/src/Session" file="ArraySession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/ArraySession.php" size="1341" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="2a88a63b1385d879b312644fe69045531ea2447a" relative="Session/ArraySession.php"/>
+  <docblock>
+    <description compact="Session class based on Array"/>
+    <package value="Baguette\Session"/>
+    <author value="USAMI Kenta &lt;tadsan@zonu.me&gt;"/>
+    <copyright value="2015 USAMI Kenta"/>
+    <license name="http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0"/>
+    <link value="http://php.net/manual/book.session.php"/>
+  </docblock>
   <implements full="Baguette\Session\SessionInterface" namespace="Baguette\Session" name="SessionInterface"/>
-  <member name="session" type="{unknown}" visibility="private" line="7"/>
-  <constructor name="__construct" start="9" end="9" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="start" start="14" end="19" abstract="false" final="false" static="false" visibility="public">
+  <member name="session" type="{unknown}" visibility="private" line="15"/>
+  <constructor name="__construct" start="17" end="17" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="start" start="22" end="27" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="boolean"/>
     </docblock>
   </method>
-  <method name="get" start="26" end="32" abstract="false" final="false" static="false" visibility="public">
+  <method name="get" start="34" end="40" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <param type="string" variable="$name"/>
@@ -20,7 +28,7 @@
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="options" byreference="false" type="array"/>
   </method>
-  <method name="set" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+  <method name="set" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <param type="string" variable="$name"/>
@@ -29,13 +37,13 @@
     <parameter name="name" byreference="false" type="{unknown}"/>
     <parameter name="value" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getAll" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAll" start="54" end="57" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="array"/>
     </docblock>
   </method>
-  <method name="destroy" start="54" end="59" abstract="false" final="false" static="false" visibility="public">
+  <method name="destroy" start="62" end="67" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="boolean"/>

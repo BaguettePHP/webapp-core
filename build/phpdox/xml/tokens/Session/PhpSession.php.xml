@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/Users/megurine/repo/php/Baguette/src/Session" file="PhpSession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/PhpSession.php" size="1295" time="2015-03-03T02:24:54+09:00" unixtime="1425317094" sha1="43460a8d4b68c94dd5658b29e6fc6f57d6414975" relative="Session/PhpSession.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/megurine/repo/php/Baguette/src/Session" file="PhpSession.php" realpath="/Users/megurine/repo/php/Baguette/src/Session/PhpSession.php" size="1281" time="2015-03-09T01:40:46+09:00" unixtime="1425832846" sha1="e329a26ac4a44720e01a841d0f9aecf6a2f29267" relative="Session/PhpSession.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -23,7 +23,7 @@
     <token name="T_DOC_COMMENT"> *</token>
   </line>
   <line no="7">
-    <token name="T_DOC_COMMENT"> * @package   Baguette\Response</token>
+    <token name="T_DOC_COMMENT"> * @package   Baguette\Session</token>
   </line>
   <line no="8">
     <token name="T_DOC_COMMENT"> * @author    USAMI Kenta &lt;tadsan@zonu.me&gt;</token>
@@ -41,11 +41,9 @@
     <token name="T_DOC_COMMENT"> */</token>
   </line>
   <line no="13">
-    <token name="T_FINAL">final</token>
-    <token name="T_WHITESPACE"> </token>
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">PhpSessionManager</token>
+    <token name="T_STRING">PhpSession</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_IMPLEMENTS">implements</token>
     <token name="T_WHITESPACE"> </token>
