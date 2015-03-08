@@ -13,6 +13,7 @@
         "webapp"
     ],
     "require": {
+        "psr/log": "~1.0.0"
     },
     "require-dev": {
          "phpunit/phpunit": "~4.3.5"
@@ -36,6 +37,7 @@
     },
     "suggest": {
         "twig/twig": "template engine"
+       ,"monolog/monolog": "logger"
        ,"zonuexe/simple-routing": "simple router for web app"
        ,"zonuexe/http-accept-language": "HTTP Accept-Language header parser"
     }
