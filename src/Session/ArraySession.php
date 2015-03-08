@@ -10,7 +10,7 @@ namespace Baguette\Session;
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  * @link      http://php.net/manual/book.session.php
  */
-final class ArraySession implements SessionInterface
+class ArraySession implements SessionInterface
 {
     private $session;
 
