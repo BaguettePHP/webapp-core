@@ -3,7 +3,7 @@
     <bootstrap />
 
     <!-- A phpDox project to process, you can have multiple projects in one config file -->
-    <project name="Baguette Framework" source="${basedir}/src" workdir="${basedir}/build/phpdox/xml">
+    <project name="Baguette Not Framework" source="${basedir}/src" workdir="${basedir}/build/phpdox/xml">
         <collector publiconly="false" backend="parser">
             <include mask="*.php" />
             <exclude mask="" />
