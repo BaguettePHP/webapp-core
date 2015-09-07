@@ -1,6 +1,6 @@
 {
     "name": "zonuexe/baguette",
-    "description": "Simple and High modularity web framework for PHP.",
+    "description": "Simple classes for WebApp",
     "license": "Apache-2.0",
     "authors": [
         {

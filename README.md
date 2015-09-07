@@ -1,14 +1,14 @@
-Baguette Framework
-==================
+ξ ^ω^)ξ ＜ Baguette Not Framework
+====================================
 
-Simple and High modularity web framework for PHP.
+Simple classes for web application in PHP
 
 Copyright
 ---------
 
 see `./LICENSE`.
 
-    Simple routing for WebApp
+    Simple classes for WebApp
     Copyright (c) 2015 USAMI Kenta <tadsan@zonu.me>
 
 Teto Kasane
@@ -32,7 +32,7 @@ I love [Teto Kasane](http://utau.wikia.com/wiki/Teto_Kasane). (ja: [Teto Kasane 
 ```
 
 > ばげっとちゃんは、
-> 生まれたばかりのふれーむわーくです。
+> 生まれたばかりのふれーむわーくではありません。
 >
 > 応援して下さいね☆
 >
