@@ -3,6 +3,8 @@ namespace Baguette;
 use Teto;
 
 /**
+ * @codeCoverageIgnore
+ *
  * @package   Baguette
  * @author    USAMI Kenta <tadsan@zonu.me>
  * @copyright 2015 USAMI Kenta
