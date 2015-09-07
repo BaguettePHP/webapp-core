@@ -44,8 +44,11 @@ namespace :test do
 
   desc 'Run unit test and generate code coverage'
   task :coverage do
+    FileUtils.mkdir_p(log_coverage) unless FileTest.directory?(log_coverage)
     FileUtils.mkdir_p(report_coverage) unless FileTest.directory?(report_coverage)
-    sh "#{phpunit} --coverage-clover=#{log_coverage} --coverage-html=#{report_coverage} --coverage-xml=#{log_dir}/coverage"
+    sh "#{phpunit} "+
+       " --coverage-clover=#{log_coverage} " +
+       " --coverage-html=#{report_coverage} "
   end
 end
 
