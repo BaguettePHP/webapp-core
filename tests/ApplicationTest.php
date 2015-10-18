@@ -17,9 +17,9 @@ final class ApplicationTest extends \Baguette\TestCase
     public function test()
     {
         $body = "A\nB\nC";
-        $content_type = 'text/html';
+        $content_type = 'text/html; charset=UTF-8';
         $expected_headers = [
-            ['Content-type: text/html; charset=UTF-8'],
+            ['Content-Type: text/html; charset=UTF-8', true, null],
         ];
 
         $app = new DummyApplication([], [], [], []);

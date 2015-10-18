@@ -28,8 +28,6 @@ abstract class Application
     protected $post;
     /** @var \DateTimeImmutable */
     protected $now;
-    /** @var string[] */
-    protected $sent_headers = [];
 
     /**
      * @param array $server $_SERVER
@@ -64,26 +62,42 @@ abstract class Application
      */
     public function renderResponse(Response\ResponseInterface $response)
     {
-        if (!headers_sent()) {
+        if (!static::headers_sent()) {
             http_response_code($response->getHttpStatusCode($this));
 
             foreach ($response->getResponseHeaders($this) as $header) {
-                $this->sent_headers[] = $header;
                 $string  = array_shift($header);
                 $replace = array_shift($header);
                 $http_response_code = array_shift($header);
 
                 if ($replace === null) { $replace = true; }
 
-                if ($http_response_code === null) {
-                    header($string, $replace);
-                } else {
-                    header($string, $replace, $http_response_code);
-                }
+                static::header($string, $replace, $http_response_code);
             }
         }
 
         return $response->render($this);
     }
 
+    /**
+     * @return bool
+     */
+    protected function headers_sent()
+    {
+        return \headers_sent();
+    }
+
+    /**
+     * @param string $string
+     * @param bool   $replace
+     * @param int    $http_response_code
+     */
+    protected function header($string, $replace, $http_response_code)
+    {
+        if ($http_response_code === null) {
+            \header($string, $replace);
+        } else {
+            \header($string, $replace, $http_response_code);
+        }
+    }
 }
