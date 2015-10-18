@@ -17,19 +17,21 @@ final class ApplicationTest extends \Baguette\TestCase
     public function test()
     {
         $body = "A\nB\nC";
-        $content_type = 'text/html';
+        $content_type = 'text/html; charset=UTF-8';
+        $expected_status = 200;
         $expected_headers = [
-            'Content-type: text/html; charset=UTF-8'
+            ['Content-Type: text/html; charset=UTF-8', true, null],
         ];
 
         $app = new DummyApplication([], [], [], []);
         $raw = new RawResponse($body, $content_type);
 
-        $actual_headers = xdebug_get_headers();
+        $actual = $app->renderResponse($raw);
+        $this->assertSame($body, $actual);
+        $this->assertSame($expected_status, $app->sent_status);
 
-        $this->assertSame($body, $app->renderResponse($raw));
         foreach ($expected_headers as $h) {
-            $this->assertContains($h, $actual_headers);
+            $this->assertContains($h, $app->sent_headers);
         }
     }
 }

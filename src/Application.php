@@ -62,8 +62,8 @@ abstract class Application
      */
     public function renderResponse(Response\ResponseInterface $response)
     {
-        if (!headers_sent()) {
-            http_response_code($response->getHttpStatusCode($this));
+        if (!static::headers_sent()) {
+            static::http_response_code($response->getHttpStatusCode($this));
 
             foreach ($response->getResponseHeaders($this) as $header) {
                 $string  = array_shift($header);
@@ -72,15 +72,45 @@ abstract class Application
 
                 if ($replace === null) { $replace = true; }
 
-                if ($http_response_code === null) {
-                    header($string, $replace);
-                } else {
-                    header($string, $replace, $http_response_code);
-                }
+                static::header($string, $replace, $http_response_code);
             }
         }
 
         return $response->render($this);
     }
 
+    /**
+     * @return bool
+     */
+    protected function headers_sent()
+    {
+        return \headers_sent();
+    }
+
+    /**
+     * @param string $string
+     * @param bool   $replace
+     * @param int    $http_response_code
+     */
+    protected function header($string, $replace, $http_response_code)
+    {
+        if ($http_response_code === null) {
+            \header($string, $replace);
+        } else {
+            \header($string, $replace, $http_response_code);
+        }
+    }
+
+    /**
+     * @param  int $response_code
+     * @return int
+     */
+    protected function http_response_code($response_code = null)
+    {
+        if ($response_code === null) {
+            return \http_response_code();
+        } else {
+            return \http_response_code($response_code);
+        }
+    }
 }
