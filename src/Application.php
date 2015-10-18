@@ -63,7 +63,7 @@ abstract class Application
     public function renderResponse(Response\ResponseInterface $response)
     {
         if (!static::headers_sent()) {
-            http_response_code($response->getHttpStatusCode($this));
+            static::http_response_code($response->getHttpStatusCode($this));
 
             foreach ($response->getResponseHeaders($this) as $header) {
                 $string  = array_shift($header);
@@ -98,6 +98,19 @@ abstract class Application
             \header($string, $replace);
         } else {
             \header($string, $replace, $http_response_code);
+        }
+    }
+
+    /**
+     * @param  int $response_code
+     * @return int
+     */
+    protected function http_response_code($response_code = null)
+    {
+        if ($response_code === null) {
+            return \http_response_code();
+        } else {
+            return \http_response_code($response_code);
         }
     }
 }

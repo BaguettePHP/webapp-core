@@ -14,6 +14,8 @@ final class DummyApplication extends Application
 {
     /** @var string[] */
     protected $sent_headers = [];
+    /** @var int */
+    protected $sent_status;
 
     public function execute(Teto\Routing\Action $action)
     {
@@ -35,5 +37,20 @@ final class DummyApplication extends Application
     protected function header($string, $replace, $http_response_code)
     {
         $this->sent_headers[] = [$string, $replace, $http_response_code];
+    }
+
+    /**
+     * @param  int $response_code
+     * @return int
+     */
+    protected function http_response_code($response_code = null)
+    {
+        if ($response_code === null) {
+            $response_code = $this->sent_status;
+        } else {
+            $this->sent_status = $response_code;
+        }
+
+        return $response_code;
     }
 }
