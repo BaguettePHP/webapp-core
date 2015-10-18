@@ -28,6 +28,8 @@ abstract class Application
     protected $post;
     /** @var \DateTimeImmutable */
     protected $now;
+    /** @var string[] */
+    protected $sent_headers = [];
 
     /**
      * @param array $server $_SERVER
@@ -66,6 +68,7 @@ abstract class Application
             http_response_code($response->getHttpStatusCode($this));
 
             foreach ($response->getResponseHeaders($this) as $header) {
+                $this->sent_headers[] = $header;
                 $string  = array_shift($header);
                 $replace = array_shift($header);
                 $http_response_code = array_shift($header);
