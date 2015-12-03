@@ -2,9 +2,9 @@
 ====================================
 
 [![Package version](http://img.shields.io/packagist/v/zonuexe/baguette.svg?style=flat)](https://packagist.org/packages/zonuexe/baguette)
-[![Build Status](https://travis-ci.org/BaguettePHP/baguette.svg?branch=master)](https://travis-ci.org/BaguettePHP/baguette)
+[![Build Status](https://travis-ci.org/BaguettePHP/Baguette.svg?branch=master)](https://travis-ci.org/BaguettePHP/Baguette)
 [![Packagist](http://img.shields.io/packagist/dt/zonuexe/baguette.svg?style=flat)](https://packagist.org/packages/zonuexe/baguette)
-[![Coverage Status](https://coveralls.io/repos/BaguettePHP/baguette/badge.svg)](https://coveralls.io/r/BaguettePHP/baguette)
+[![Coverage Status](https://coveralls.io/repos/BaguettePHP/Baguette/badge.svg)](https://coveralls.io/r/BaguettePHP/Baguette)
 
 
 Simple classes for web application in PHP
