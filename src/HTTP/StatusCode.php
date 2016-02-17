@@ -30,6 +30,7 @@ final class StatusCode
     const Method_Not_Allowed    = 405;
     const Not_Acceptable        = 406;
     const Im_a_teapot           = 418;
+    const Unavailable_For_Legal_Reasons = 451;
     const Internal_Server_Error = 500;
     const Service_Unavailable   = 503;
 
