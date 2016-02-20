@@ -17,17 +17,34 @@ interface SessionInterface
     public function start();
 
     /**
-     * @param  string $name
+     * @return string id
+     */
+    public function id($id = null);
+
+    /**
+     * @param  bool $_delete_old_session
+     * @return bool
+     */
+    public function regenerateId($_delete_old_session = false);
+
+    /**
+     * @param  string $key
      * @param  array  $options
      * @return mixed  $value
      */
-    public function get($name, array $options = []);
+    public function get($key, array $options = []);
+
+    /**
+     * @param string $key
+     * @param mixed  $value
+     */
+    public function set($key, $value);
 
     /**
      * @param string $name
-     * @param mixed  $value
+     * @return string
      */
-    public function set($name, $value);
+    public function name($name = null);
 
     /**
      * @return boolean

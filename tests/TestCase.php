@@ -10,7 +10,7 @@ namespace Baguette;
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @param  string|array $method
+     * @param  string|array $class_method
      * @param  mixed        $args...
      * @return callable
      */

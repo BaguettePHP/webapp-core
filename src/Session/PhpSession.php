@@ -12,14 +12,43 @@ namespace Baguette\Session;
  */
 class PhpSession implements SessionInterface
 {
-    public function __construct() {}
+    public function __construct(array $options = [])
+    {
+        if (isset($options['name'])) {
+            session_name($options['name']);
+        }
+    }
 
     /**
+     * @param  array   $options
      * @return boolean
      */
     public function start()
     {
         return session_start();
+    }
+
+    /**
+     * @return string id
+     * @link   http://php.net/manual/function.session-id.php
+     */
+    public function id($id = null)
+    {
+        if ($id === null) {
+            return session_id();
+        }
+
+        return session_id($id);
+    }
+
+    /**
+     * @param  bool $delete_old_session
+     * @return bool
+     * @link   http://php.net/manual/function.session-regenerate-id.php
+     */
+    public function regenerateId($delete_old_session = false)
+    {
+        return session_regenerate_id($delete_old_session);
     }
 
     /**
@@ -50,6 +79,19 @@ class PhpSession implements SessionInterface
     public function set($name, $value)
     {
         $_SESSION[$name] = $value;
+    }
+
+    /**
+     * @param string $name
+     * @return string
+     */
+    public function name($name = null)
+    {
+        if ($name !== null) {
+            return session_name($name);
+        }
+
+        return session_name();
     }
 
     /**
