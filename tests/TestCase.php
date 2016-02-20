@@ -9,4 +9,28 @@ namespace Baguette;
  */
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @param  string|array $method
+     * @param  mixed        $args...
+     * @return callable
+     */
+    public static function methodAsPublic ($class_method)
+    {
+        if (is_array($class_method)) {
+            list($class, $method) = $class_method;
+            $ref = new \ReflectionMethod($class, $method);
+        } else {
+            $class = null;
+            $ref = new \ReflectionMethod($class_method);
+        }
+
+        $ref->setAccessible(true);
+        $obj = is_object($class) ? $class : null;
+
+        return function () use ($class, $ref, $obj) {
+            $args = func_get_args();
+            return $ref->invokeArgs($obj, $args);
+        };
+
+    }
 }
