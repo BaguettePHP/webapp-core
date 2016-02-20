@@ -1,6 +1,7 @@
 <?php
 namespace Baguette\Response;
-use Baguette;
+use Baguette\Application;
+use Teto\HTTP;
 
 /**
  * Interface of Response classes
@@ -28,7 +29,7 @@ final class RawResponse implements ResponseInterface
     {
         $this->content = $content;
         $this->content_type = ($content_type === null)
-                            ? Baguette\HTTP\ContentType::Application_OctetStream
+                            ? HTTP\ContentType::Application_OctetStream
                             : $content_type ;
         $this->status_code = $status_code;
     }
@@ -37,7 +38,7 @@ final class RawResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return array[]
      */
-    public function getResponseHeaders(Baguette\Application $_)
+    public function getResponseHeaders(Application $_)
     {
         return [
             ['Content-Type: ' . $this->content_type],
@@ -48,7 +49,7 @@ final class RawResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(Baguette\Application $_)
+    public function getHttpStatusCode(Application $_)
     {
         return $this->status_code;
     }
@@ -57,7 +58,7 @@ final class RawResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return string
      */
-    public function render(Baguette\Application $_)
+    public function render(Application $_)
     {
         return $this->content;
     }
