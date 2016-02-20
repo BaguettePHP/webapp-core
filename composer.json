@@ -13,6 +13,8 @@
         "webapp"
     ],
     "require": {
+        "ircmaxell/random-lib": "~1.1",
+        "zonuexe/http": "^0.0.1",
         "psr/log": "~1.0"
     },
     "require-dev": {
@@ -34,6 +36,9 @@
         "psr-4": {
             "Baguette\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "suggest": {
         "twig/twig": "template engine"
