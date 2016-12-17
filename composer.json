@@ -38,6 +38,7 @@
         }
     },
     "scripts": {
+        "doc": "apigen generate",
         "test": "phpunit"
     },
     "suggest": {
