@@ -3,7 +3,7 @@
 namespace Baguette\Application;
 
 /**
- * Param trait for Application (filter_var wrapper)
+ * HTTP Accept-Language header support trait for Application
  *
  * @author    USAMI Kenta <tadsan@zonu.me>
  * @copyright 2016 Baguette HQ
