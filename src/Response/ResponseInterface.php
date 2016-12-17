@@ -17,6 +17,6 @@ interface ResponseInterface
     /** @return int */
     public function getHttpStatusCode(\Baguette\Application $app);
 
-    /** @return string */
+    /** @return string|null */
     public function render(\Baguette\Application $app);
 }

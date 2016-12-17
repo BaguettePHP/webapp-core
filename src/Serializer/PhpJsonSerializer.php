@@ -44,7 +44,7 @@ final class PhpJsonSerializer implements SerializerInterface
 
     /**
      * @param  boolean $value
-     * @return JsonResponse $this
+     * @return $this
      */
     public function setEmptyAsObject($value = true)
     {
@@ -61,7 +61,7 @@ final class PhpJsonSerializer implements SerializerInterface
 
     /**
      * @param  mixed  $value
-     * @return string
+     * @return string|false
      * @throws \DomainException
      * @link   http://php.net/manual/function.json-encode.php
      * @link   http://php.net/manual/function.json-last-error.php
