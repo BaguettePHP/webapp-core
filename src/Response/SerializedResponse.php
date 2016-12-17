@@ -33,10 +33,9 @@ final class SerializedResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return array[]
      */
-    public function getResponseHeaders(Baguette\Application $_)
+    public function getResponseHeaders()
     {
         return [
             ['Content-Type: '. $this->serializer->getContentType()]
@@ -44,16 +43,14 @@ final class SerializedResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(Baguette\Application $_)
+    public function getHttpStatusCode()
     {
         return $this->status_code;
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return string
      */
     public function render(Baguette\Application $_)

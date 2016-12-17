@@ -36,10 +36,9 @@ final class RawResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return array[]
      */
-    public function getResponseHeaders(Application $_)
+    public function getResponseHeaders()
     {
         return [
             ['Content-Type: ' . $this->content_type],
@@ -47,19 +46,17 @@ final class RawResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(Application $_)
+    public function getHttpStatusCode()
     {
         return $this->status_code;
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return string
      */
-    public function render(Application $_)
+    public function render(\Baguette\Application $_)
     {
         return $this->content;
     }

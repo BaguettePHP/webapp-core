@@ -19,7 +19,7 @@ final class RawResponseTest extends \Baguette\TestCase
         $app = new DummyApplication([], [], [], []);
         $redirect = new RawResponse($body, $content_type);
 
-        $this->assertSame($expected['header'], $redirect->getResponseHeaders($app));
+        $this->assertSame($expected['header'], $redirect->getResponseHeaders());
         $this->assertSame($expected['body'],   $redirect->render($app));
     }
 

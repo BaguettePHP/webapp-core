@@ -17,7 +17,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
         $app = new \Baguette\DummyApplication([], [], [], []);
         $redirect = new RedirectResponse($location, $param, $status);
 
-        $this->assertSame($expected, $redirect->getResponseHeaders($app));
+        $this->assertSame($expected, $redirect->getResponseHeaders());
         $this->assertNull($redirect->render($app));
     }
 

@@ -12,10 +12,10 @@ namespace Baguette\Response;
 interface ResponseInterface
 {
     /** @return array[] */
-    public function getResponseHeaders(\Baguette\Application $app);
+    public function getResponseHeaders();
 
     /** @return int */
-    public function getHttpStatusCode(\Baguette\Application $app);
+    public function getHttpStatusCode();
 
     /** @return string|null */
     public function render(\Baguette\Application $app);

@@ -45,10 +45,9 @@ final class RedirectResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return array[]
      */
-    public function getResponseHeaders(\Baguette\Application $_)
+    public function getResponseHeaders()
     {
         $location = $this->location;
         if ($this->params) {
@@ -61,16 +60,14 @@ final class RedirectResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(\Baguette\Application $_)
+    public function getHttpStatusCode()
     {
         return $this->status_code;
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return null
      */
     public function render(\Baguette\Application $_)

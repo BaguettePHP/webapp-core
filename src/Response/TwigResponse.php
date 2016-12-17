@@ -37,10 +37,9 @@ class TwigResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $app
      * @return array[]
      */
-    public function getResponseHeaders(\Baguette\Application $app)
+    public function getResponseHeaders()
     {
         return [
             ['Content-Type: '. self::CONTENT_TYPE_HTML],
@@ -65,10 +64,9 @@ class TwigResponse implements ResponseInterface
     }
 
     /**
-     * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(\Baguette\Application $_)
+    public function getHttpStatusCode()
     {
         return $this->status_code;
     }

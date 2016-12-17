@@ -19,7 +19,7 @@ final class SerializedResponseTest extends \Baguette\TestCase
         $expected_header = [['Content-Type: application/json; charset=utf-8']];
         $expected_body = '["a"]';
 
-        $this->assertSame($expected_header, $response->getResponseHeaders($app));
+        $this->assertSame($expected_header, $response->getResponseHeaders());
         $this->assertSame($expected_body, $response->render($app));
     }
 }

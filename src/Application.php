@@ -62,9 +62,9 @@ abstract class Application
     public function renderResponse(Response\ResponseInterface $response)
     {
         if (!static::headers_sent()) {
-            static::http_response_code($response->getHttpStatusCode($this));
+            static::http_response_code($response->getHttpStatusCode());
 
-            foreach ($response->getResponseHeaders($this) as $header) {
+            foreach ($response->getResponseHeaders() as $header) {
                 $string  = array_shift($header);
                 $replace = array_shift($header);
                 $http_response_code = array_shift($header);
