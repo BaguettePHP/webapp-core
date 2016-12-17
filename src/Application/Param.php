@@ -1,13 +1,12 @@
 <?php
+
 namespace Baguette\Application;
-use Baguette;
 
 /**
  * Param trait for Application (filter_var wrapper)
  *
- * @package   Baguette\Application
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  * @link      http://php.net/manual/function.filter-var.php
  */

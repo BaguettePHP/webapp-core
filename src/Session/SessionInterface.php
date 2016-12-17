@@ -1,12 +1,12 @@
 <?php
+
 namespace Baguette\Session;
 
 /**
  * Interface of Session classes
  *
- * @package   Baguette\Session
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
 interface SessionInterface

@@ -15,7 +15,7 @@ Copyright
 see `./LICENSE`.
 
     Simple classes for WebApp
-    Copyright (c) 2015 USAMI Kenta <tadsan@zonu.me>
+    Copyright (c) 2016 Baguette HQ / USAMI Kenta <tadsan@zonu.me>
 
 Teto Kasane
 -----------

@@ -1,22 +1,20 @@
 <?php
+
 namespace Baguette\Application;
-use Baguette;
-use Teto;
 
 /**
- * @package   Baguette
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
-final class ParamTestApplication extends Baguette\Application
+final class ParamTestApplication extends \Baguette\Application
 {
-    use Baguette\Application\Param;
+    use \Baguette\Application\Param;
 
-    public function execute(Teto\Routing\Action $action) {}
+    public function execute(\Teto\Routing\Action $action) {}
 }
 
-final class ParamTest extends Baguette\TestCase
+final class ParamTest extends \Baguette\TestCase
 {
     /**
      * @dataProvider dataProviderFor_getParam

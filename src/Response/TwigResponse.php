@@ -1,13 +1,12 @@
 <?php
+
 namespace Baguette\Response;
-use Baguette;
 
 /**
  * HTML Template Response
  *
- * @package   Baguette\Response
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
 class TwigResponse implements ResponseInterface
@@ -41,7 +40,7 @@ class TwigResponse implements ResponseInterface
      * @param  \Baguette\Application $app
      * @return array[]
      */
-    public function getResponseHeaders(Baguette\Application $app)
+    public function getResponseHeaders(\Baguette\Application $app)
     {
         return [
             ['Content-Type: '. self::CONTENT_TYPE_HTML],
@@ -52,7 +51,7 @@ class TwigResponse implements ResponseInterface
      * @param  \Baguette\Application $app
      * @return string
      */
-    public function render(Baguette\Application $app)
+    public function render(\Baguette\Application $app)
     {
         $params = $this->params + [
             'server' => $app->server,
@@ -69,7 +68,7 @@ class TwigResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(Baguette\Application $_)
+    public function getHttpStatusCode(\Baguette\Application $_)
     {
         return $this->status_code;
     }

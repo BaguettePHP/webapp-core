@@ -1,13 +1,12 @@
 <?php
+
 namespace Baguette\Response;
-use Baguette;
 
 /**
  * Redirect Response class
  *
- * @package   Baguette\Response
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
 final class RedirectResponse implements ResponseInterface
@@ -49,7 +48,7 @@ final class RedirectResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return array[]
      */
-    public function getResponseHeaders(Baguette\Application $_)
+    public function getResponseHeaders(\Baguette\Application $_)
     {
         $location = $this->location;
         if ($this->params) {
@@ -65,7 +64,7 @@ final class RedirectResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return int
      */
-    public function getHttpStatusCode(Baguette\Application $_)
+    public function getHttpStatusCode(\Baguette\Application $_)
     {
         return $this->status_code;
     }
@@ -74,7 +73,7 @@ final class RedirectResponse implements ResponseInterface
      * @param  \Baguette\Application $_ is not used.
      * @return null
      */
-    public function render(Baguette\Application $_)
+    public function render(\Baguette\Application $_)
     {
         return null;
     }

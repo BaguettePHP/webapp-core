@@ -1,13 +1,12 @@
 <?php
+
 namespace Baguette;
-use Teto;
 
 /**
  * Base class of web application
  *
- * @package   Baguette
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  *
  * @property-read array $server $_SERVER
@@ -49,7 +48,7 @@ abstract class Application
      * @param  \Teto\Routing\Action $action
      * @return \Baguette\Response\ResponseInterface
      */
-    abstract public function execute(Teto\Routing\Action $action);
+    abstract public function execute(\Teto\Routing\Action $action);
 
     public function __get($name)
     {

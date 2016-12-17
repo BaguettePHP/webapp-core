@@ -1,14 +1,12 @@
 <?php
+
 namespace Baguette\Application;
-use Baguette;
-use Teto;
 
 /**
  * Param trait for Application (filter_var wrapper)
  *
- * @package   Baguette\Application
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  * @link      http://php.net/manual/function.filter-var.php
  */
@@ -50,7 +48,7 @@ trait AcceptLanguage
             $default = $languages[0];
         }
 
-        return Teto\HTTP\AcceptLanguage::detect($strategy, $default, $this->server['HTTP_ACCEPT_LANGUAGE']);
+        return \Teto\HTTP\AcceptLanguage::detect($strategy, $default, $this->server['HTTP_ACCEPT_LANGUAGE']);
     }
 
     public function getLanguageByStrategy()

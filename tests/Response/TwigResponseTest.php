@@ -1,11 +1,10 @@
 <?php
+
 namespace Baguette\Response;
-use Baguette\DummyApplication;
 
 /**
- * @package   Baguette\Redirect
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
 final class TwigResponseTest extends \Baguette\TestCase
@@ -13,7 +12,7 @@ final class TwigResponseTest extends \Baguette\TestCase
     public function test()
     {
         $now = \DateTimeImmutable::createFromFormat('Y-m-d', '1999-07-01');
-        $app = new DummyApplication(['a' => 'A'], ['b' => 'B'], ['c' => 'C'], ['d' => 'D'], $now);
+        $app = new \Baguette\DummyApplication(['a' => 'A'], ['b' => 'B'], ['c' => 'C'], ['d' => 'D'], $now);
         $loader = new \Twig_Loader_Array([
             'tmpl' => '{{ server.a }}, {{ cookie.b }}, {{ get.c }}, {{ post.d }}, {{ now.format("Y-m-d") }}!',
         ]);

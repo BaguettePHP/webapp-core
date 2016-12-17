@@ -1,11 +1,12 @@
 <?php
+
 namespace Baguette\Response;
+
 use Baguette\DummyApplication;
 
 /**
- * @package   Baguette\Redirect
  * @author    USAMI Kenta <tadsan@zonu.me>
- * @copyright 2015 USAMI Kenta
+ * @copyright 2016 Baguette HQ
  * @license   http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
  */
 final class RawResponseTest extends \Baguette\TestCase
