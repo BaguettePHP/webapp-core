@@ -26,8 +26,7 @@ class ArraySession implements SessionInterface
     }
 
     /**
-     * @param  array   $options
-     * @return boolean
+     * @return bool
      */
     public function start()
     {
@@ -38,6 +37,7 @@ class ArraySession implements SessionInterface
     }
 
     /**
+     * @param  string $id
      * @return string id
      */
     public function id($id = null)
@@ -107,7 +107,7 @@ class ArraySession implements SessionInterface
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function destroy()
     {
