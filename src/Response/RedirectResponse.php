@@ -68,10 +68,10 @@ final class RedirectResponse implements ResponseInterface
     }
 
     /**
-     * @return null
+     * @return false
      */
     public function render(\Baguette\Application $_)
     {
-        return null;
+        return false;
     }
 }

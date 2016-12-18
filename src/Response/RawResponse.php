@@ -2,7 +2,7 @@
 
 namespace Baguette\Response;
 
-use Baguette\Application;
+use GuzzleHttp\Psr7\Stream;
 use Teto\HTTP;
 
 /**
@@ -14,7 +14,7 @@ use Teto\HTTP;
  */
 final class RawResponse implements ResponseInterface
 {
-    /** @var string */
+    /** @var Stream */
     public $content;
     /** @var string */
     public $content_type;

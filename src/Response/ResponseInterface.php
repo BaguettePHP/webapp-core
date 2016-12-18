@@ -17,6 +17,6 @@ interface ResponseInterface
     /** @return int */
     public function getHttpStatusCode();
 
-    /** @return string|null */
+    /** @return string|\GuzzleHttp\Psr7\Stream|false */
     public function render(\Baguette\Application $app);
 }
