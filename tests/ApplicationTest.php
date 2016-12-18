@@ -18,7 +18,7 @@ final class ApplicationTest extends \Baguette\TestCase
         $content_type = 'text/html; charset=UTF-8';
         $expected_status = 200;
         $expected_headers = [
-            ['Content-Type: text/html; charset=UTF-8', true, null],
+            'content-type' => ['text/html; charset=UTF-8'],
         ];
 
         $app = new \Baguette\DummyApplication([], [], [], []);
@@ -28,8 +28,10 @@ final class ApplicationTest extends \Baguette\TestCase
         $this->assertSame($body, $actual);
         $this->assertSame($expected_status, $app->sent_status);
 
-        foreach ($expected_headers as $h) {
-            $this->assertContains($h, $app->sent_headers);
+        foreach ($expected_headers as $type => $headers) {
+            foreach ($headers as $h) {
+                $this->assertContains("{$type}: {$h}", $app->sent_headers);
+            }
         }
     }
 }

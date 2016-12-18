@@ -29,12 +29,10 @@ final class DummyApplication extends Application
 
     /**
      * @param string $string
-     * @param bool   $replace
-     * @param int    $http_response_code
      */
-    protected function header($string, $replace, $http_response_code)
+    protected function header($string)
     {
-        $this->sent_headers[] = [$string, $replace, $http_response_code];
+        $this->sent_headers[] = $string;
     }
 
     /**

@@ -64,14 +64,10 @@ abstract class Application
         if (!static::headers_sent()) {
             static::http_response_code($response->getHttpStatusCode());
 
-            foreach ($response->getResponseHeaders() as $header) {
-                $string  = array_shift($header);
-                $replace = array_shift($header);
-                $http_response_code = array_shift($header);
-
-                if ($replace === null) { $replace = true; }
-
-                static::header($string, $replace, $http_response_code);
+            foreach ($response->getResponseHeaders() as $type => $values) {
+                foreach ($values as $v) {
+                    static::header("{$type}: {$v}");
+                }
             }
         }
 
@@ -91,13 +87,9 @@ abstract class Application
      * @param bool   $replace
      * @param int    $http_response_code
      */
-    protected function header($string, $replace, $http_response_code)
+    protected function header($string)
     {
-        if ($http_response_code === null) {
-            \header($string, $replace);
-        } else {
-            \header($string, $replace, $http_response_code);
-        }
+        \header($string);
     }
 
     /**
