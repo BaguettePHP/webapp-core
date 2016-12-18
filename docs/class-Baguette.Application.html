@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Baguette\Application | ξ ^ω^)ξ ＜ Baguette Not Framework</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Baguette.html">
+						Baguette<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Baguette.Application.html">
+						Application					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Baguette.Response.html">
+						Response					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Baguette.Serializer.html">
+						Serializer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Baguette.Session.html">
+						Session					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Baguette.Application.html">Application</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Baguette.html" title="Summary of Baguette"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Application</h1>
+
+
+	<div class="description">
+	<p>Base class of web application</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Baguette.html">Baguette</a><br>
+		
+
+				<b>Copyright:</b>
+				2016 Baguette HQ<br>
+				<b>License:</b>
+				<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+				<b>Author:</b>
+				USAMI Kenta <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;:&#x74;&#97;&#100;&#x73;&#x61;&#110;&#64;&#x7a;&#111;&#110;&#x75;&#x2e;&#109;&#101;">&#x74;&#97;&#100;&#x73;&#x61;&#110;&#64;&#x7a;&#111;&#110;&#x75;&#x2e;&#109;&#101;</a><br>
+			<b>Located at</b> <a href="source-class-Baguette.Application.html#5-107" title="Go to source code">Application.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Baguette.Application.html#31-45" title="Go to source code">__construct</a>( <span>array <var>$server</var></span>, <span>array <var>$cookie</var></span>, <span>array <var>$get</var></span>, <span>array <var>$post</var></span>, <span>DateTimeImmutable <var>$now</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd>$_SERVER</dd>
+					<dt><var>$cookie</var></dt>
+					<dd>$_COOKIE</dd>
+					<dt><var>$get</var></dt>
+					<dd>$_GET</dd>
+					<dt><var>$post</var></dt>
+					<dd>$_POST</dd>
+					<dt><var>$now</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			<code><a href="class-Baguette.Response.ResponseInterface.html">Baguette\Response\ResponseInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Baguette.Application.html#47-51" title="Go to source code">execute</a>( <span>Teto\Routing\Action <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Baguette.Response.ResponseInterface.html">Baguette\Response\ResponseInterface</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-Baguette.Application.html#53-56" title="Go to source code">__get</a>( <span> <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="renderResponse" id="_renderResponse">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_renderResponse">#</a>
+		<code><a href="source-class-Baguette.Application.html#58-75" title="Go to source code">renderResponse</a>( <span><code><a href="class-Baguette.Response.ResponseInterface.html">Baguette\Response\ResponseInterface</a></code> <var>$response</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="headers_sent" id="_headers_sent">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_headers_sent">#</a>
+		<code><a href="source-class-Baguette.Application.html#77-83" title="Go to source code">headers_sent</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="header" id="_header">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_header">#</a>
+		<code><a href="source-class-Baguette.Application.html#85-93" title="Go to source code">header</a>( <span>string <var>$string</var></span>, <span>boolean <var>$replace</var>,…</span>, <span>integer <var>$http_response_code</var>,…</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd></dd>
+					<dt><var>$replace</var>,…</dt>
+					<dd></dd>
+					<dt><var>$http_response_code</var>,…</dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="http_response_code" id="_http_response_code">
+
+		<td class="attributes"><code>
+			 protected 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_http_response_code">#</a>
+		<code><a href="source-class-Baguette.Application.html#95-106" title="Go to source code">http_response_code</a>( <span>integer <var>$response_code</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response_code</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="server" id="$server">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#20-21" title="Go to source code"><var>$server</var></a>
+
+			<div class="description short">
+				<p>$_SERVER</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$_SERVER</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$server" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="cookie" id="$cookie">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#22-23" title="Go to source code"><var>$cookie</var></a>
+
+			<div class="description short">
+				<p>$_COOKIE</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$_COOKIE</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$cookie" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="get" id="$get">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#24-25" title="Go to source code"><var>$get</var></a>
+
+			<div class="description short">
+				<p>$_GET</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$_GET</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$get" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="post" id="$post">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#26-27" title="Go to source code"><var>$post</var></a>
+
+			<div class="description short">
+				<p>$_POST</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$_POST</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$post" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="now" id="$now">
+		<td class="attributes"><code>
+			protected  
+			DateTimeImmutable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#28-29" title="Go to source code"><var>$now</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$now" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="server" id="m$server">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#12" title="Go to source code"><var>$server</var></a>
+
+			<div class="description short">
+				<p>$_SERVER</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="cookie" id="m$cookie">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#13" title="Go to source code"><var>$cookie</var></a>
+
+			<div class="description short">
+				<p>$_COOKIE</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="get" id="m$get">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#14" title="Go to source code"><var>$get</var></a>
+
+			<div class="description short">
+				<p>$_GET</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="post" id="m$post">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#15" title="Go to source code"><var>$post</var></a>
+
+			<div class="description short">
+				<p>$_POST</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="now" id="m$now">
+		<td class="attributes"><code>
+			public  read-only
+			DateTimeImmutable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Baguette.Application.html#16" title="Go to source code"><var>$now</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		ξ ^ω^)ξ ＜ Baguette Not Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

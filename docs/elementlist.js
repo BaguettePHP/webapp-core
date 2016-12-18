@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","Baguette\\Application"],["c","Baguette\\Application\\AcceptLanguage"],["c","Baguette\\Application\\Logging"],["c","Baguette\\Application\\Param"],["c","Baguette\\Application\\Whoopsable"],["c","Baguette\\Response\\Helper"],["c","Baguette\\Response\\RawResponse"],["c","Baguette\\Response\\RedirectResponse"],["c","Baguette\\Response\\ResponseInterface"],["c","Baguette\\Response\\SerializedResponse"],["c","Baguette\\Response\\TwigResponse"],["c","Baguette\\Serializer\\PhpJsonSerializer"],["c","Baguette\\Serializer\\SerializerInterface"],["c","Baguette\\Session\\ArraySession"],["c","Baguette\\Session\\PhpSession"],["c","Baguette\\Session\\SessionInterface"]];
