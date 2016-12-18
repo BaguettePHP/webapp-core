@@ -28,7 +28,7 @@ final class PhpJsonSerializer implements SerializerInterface
     /** @var int */
     public $json_encode_option;
 
-    /** @var boolean */
+    /** @var bool */
     public $empty_as_object;
 
     /**
@@ -43,7 +43,7 @@ final class PhpJsonSerializer implements SerializerInterface
     }
 
     /**
-     * @param  boolean $value
+     * @param  bool  $value
      * @return $this
      */
     public function setEmptyAsObject($value = true)

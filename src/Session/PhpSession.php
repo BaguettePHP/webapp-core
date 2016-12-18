@@ -20,8 +20,7 @@ class PhpSession implements SessionInterface
     }
 
     /**
-     * @param  array   $options
-     * @return boolean
+     * @return bool
      */
     public function start()
     {
@@ -95,7 +94,7 @@ class PhpSession implements SessionInterface
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function destroy()
     {

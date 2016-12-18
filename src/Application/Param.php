@@ -50,9 +50,9 @@ trait Param
 
     /**
      * @param  $name
-     * @param  int     $filter
-     * @param  mixed   $filter_option
-     * @param  boolean $get_array
+     * @param  int   $filter
+     * @param  mixed $filter_option
+     * @param  bool  $get_array
      * @return mixed
      */
     public function getParamFilter($name, $filter, $filter_option = [], $get_array = null)
