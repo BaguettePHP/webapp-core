@@ -18,6 +18,7 @@ return [
         'src/',
         'tests/',
         'vendor/filp/whoops/src/Whoops/',
+        'vendor/guzzlehttp/psr7/src/',
         'vendor/ircmaxell/random-lib/',
         'vendor/ircmaxell/security-lib/',
         'vendor/phpunit/phpunit/src/',
