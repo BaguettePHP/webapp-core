@@ -55,7 +55,7 @@ final class RedirectResponse implements ResponseInterface
         }
 
         return [
-            ['Location: ' . $location, true, $this->status_code],
+            'location' => [$location],
         ];
     }
 

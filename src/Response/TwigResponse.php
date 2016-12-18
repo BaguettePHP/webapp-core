@@ -42,7 +42,7 @@ class TwigResponse implements ResponseInterface
     public function getResponseHeaders()
     {
         return [
-            ['Content-Type: '. self::CONTENT_TYPE_HTML],
+            'content-type' => [self::CONTENT_TYPE_HTML],
         ];
     }
 

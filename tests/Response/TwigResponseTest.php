@@ -20,7 +20,7 @@ final class TwigResponseTest extends \Baguette\TestCase
 
         $twig_response = new TwigResponse('tmpl', ['foo' => 'bar']);
 
-        $expected_header = [['Content-Type: text/html; charset=utf-8']];
+        $expected_header = ['content-type' => ['text/html; charset=utf-8']];
         $expected_body = 'A, B, C, D, 1999-07-01!';
 
         $this->assertSame($expected_header, $twig_response->getResponseHeaders());

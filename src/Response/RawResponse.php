@@ -36,12 +36,12 @@ final class RawResponse implements ResponseInterface
     }
 
     /**
-     * @return array[]
+     * @return array
      */
     public function getResponseHeaders()
     {
         return [
-            ['Content-Type: ' . $this->content_type],
+            'content-type' => [$this->content_type],
         ];
     }
 

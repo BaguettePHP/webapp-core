@@ -29,7 +29,7 @@ final class RawResponseTest extends \Baguette\TestCase
             [
                 'expected' => [
                     'header' => [
-                        ['Content-Type: text/plain'],
+                        'content-type' => ['text/plain'],
                     ],
                     'body' => "abcde"
                 ],
@@ -39,7 +39,7 @@ final class RawResponseTest extends \Baguette\TestCase
             [
                 'expected' => [
                     'header' => [
-                        ['Content-Type: application/octet-stream'],
+                        'content-type' => ['application/octet-stream'],
                     ],
                     'body' => "abcde"
                 ],

@@ -38,7 +38,7 @@ final class SerializedResponse implements ResponseInterface
     public function getResponseHeaders()
     {
         return [
-            ['Content-Type: '. $this->serializer->getContentType()]
+            'content-type' => [$this->serializer->getContentType()],
         ];
     }
 

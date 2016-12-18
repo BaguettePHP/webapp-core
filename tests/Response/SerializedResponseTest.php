@@ -16,7 +16,7 @@ final class SerializedResponseTest extends \Baguette\TestCase
         $app = new \Baguette\DummyApplication([], [], [], []);
         $response = new SerializedResponse(['a'], new PhpJsonSerializer);
 
-        $expected_header = [['Content-Type: application/json; charset=utf-8']];
+        $expected_header = ['content-type' => ['application/json; charset=utf-8']];
         $expected_body = '["a"]';
 
         $this->assertSame($expected_header, $response->getResponseHeaders());

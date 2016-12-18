@@ -11,7 +11,7 @@ namespace Baguette\Response;
  */
 interface ResponseInterface
 {
-    /** @return array[] */
+    /** @return array */
     public function getResponseHeaders();
 
     /** @return int */

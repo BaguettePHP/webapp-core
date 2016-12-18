@@ -26,7 +26,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
         return [
             [
                 'expected' => [
-                    ['Location: http://example.com/', true, 302]
+                    'location' => ['http://example.com/']
                 ],
                 'location' => 'http://example.com/',
                 'param'    => [],
@@ -34,7 +34,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
             ],
             [
                 'expected' => [
-                    ['Location: http://example.com/?foo=bar', true, 302]
+                    'location' => ['http://example.com/?foo=bar']
                 ],
                 'location' => 'http://example.com/',
                 'param'    => ['foo' => 'bar'],
@@ -42,7 +42,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
             ],
             [
                 'expected' => [
-                    ['Location: http://example.com/?foo%5B0%5D=bar', true, 302]
+                    'location' => ['http://example.com/?foo%5B0%5D=bar']
                 ],
                 'location' => 'http://example.com/',
                 'param'    => ['foo' => ['bar']],
@@ -50,7 +50,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
             ],
             [
                 'expected' => [
-                    ['Location: http://example.com/', true, 301]
+                    'location' => ['http://example.com/']
                 ],
                 'location' => 'http://example.com/',
                 'param'    => [],
@@ -58,7 +58,7 @@ final class RedirectResponseTest extends \Baguette\TestCase
             ],
             [
                 'expected' => [
-                    ['Location: http://example.com/', true, 302]
+                    'location' => ['http://example.com/']
                 ],
                 'location' => 'http://example.com/',
                 'param'    => [],
