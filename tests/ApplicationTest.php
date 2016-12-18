@@ -2,6 +2,8 @@
 
 namespace Baguette;
 
+use Psr\Http\Message\StreamInterface;
+
 /**
  * @author    USAMI Kenta <tadsan@zonu.me>
  * @copyright 2016 Baguette HQ
@@ -25,7 +27,8 @@ final class ApplicationTest extends \Baguette\TestCase
         $raw = new \Baguette\Response\RawResponse($body, $content_type);
 
         $actual = $app->renderResponse($raw);
-        $this->assertSame($body, $actual);
+        $this->assertInstanceof(StreamInterface::class, $actual);
+        $this->assertSame($body, (string)$actual);
         $this->assertSame($expected_status, $app->sent_status);
 
         foreach ($expected_headers as $type => $headers) {

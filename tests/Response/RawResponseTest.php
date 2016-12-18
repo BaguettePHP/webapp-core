@@ -3,6 +3,7 @@
 namespace Baguette\Response;
 
 use Baguette\DummyApplication;
+use Psr\Http\Message\StreamInterface;
 
 /**
  * @author    USAMI Kenta <tadsan@zonu.me>
@@ -18,9 +19,11 @@ final class RawResponseTest extends \Baguette\TestCase
     {
         $app = new DummyApplication([], [], [], []);
         $redirect = new RawResponse($body, $content_type);
+        $actual = $redirect->render($app);
 
         $this->assertSame($expected['header'], $redirect->getResponseHeaders());
-        $this->assertSame($expected['body'],   $redirect->render($app));
+        $this->assertInstanceof(StreamInterface::class, $actual);
+        $this->assertSame($expected['body'],   (string)$actual);
     }
 
     public function dataProviderFor_test()
