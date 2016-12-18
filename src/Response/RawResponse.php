@@ -3,6 +3,7 @@
 namespace Baguette\Response;
 
 use GuzzleHttp\Psr7\Stream;
+use Psr\Http\Message\StreamInterface;
 use Teto\HTTP;
 
 /**
@@ -22,13 +23,13 @@ final class RawResponse implements ResponseInterface
     public $status_code;
 
     /**
-     * @param string $content
+     * @param resource|string|null|int|float|bool|StreamInterface|callable $content
      * @param int    $status_code
      * @param string $content_type
      */
     public function __construct($content, $content_type = null, $status_code = 200)
     {
-        $this->content = $content;
+        $this->content = \GuzzleHttp\Psr7\stream_for($content);
         $this->content_type = ($content_type === null)
                             ? HTTP\ContentType::Application_OctetStream
                             : $content_type ;
@@ -54,7 +55,7 @@ final class RawResponse implements ResponseInterface
     }
 
     /**
-     * @return string
+     * @return Stream
      */
     public function render(\Baguette\Application $_)
     {
