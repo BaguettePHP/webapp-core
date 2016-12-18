@@ -7,7 +7,20 @@
 [![Coverage Status](https://coveralls.io/repos/BaguettePHP/Baguette/badge.svg)](https://coveralls.io/r/BaguettePHP/Baguette)
 
 
-Simple classes for web application in PHP
+Simple classes for web application in PHP, supports [PSR-7: HTTP message interfaces](http://www.php-fig.org/psr/psr-7/).
+
+Features
+--------
+
+* Application
+  * Pluggable Web Application core class
+  * Plugins implementation in [trait](http://php.net/manual/ja/language.oop5.traits.php).
+* Response
+  * Original HTTP response class, but interoperate with [PSR-7](http://www.php-fig.org/psr/psr-7/).
+* Serializer
+  * Simple content serializer implementation
+* Session
+  * Simple session wrapper class
 
 Copyright
 ---------
